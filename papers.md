@@ -1,7 +1,7 @@
 ---
 layout: page
 title: LLM4HW papers
-subtitle: from our team at UNSW, NYU, and UCalgary
+permalink: /papers
 ---
 
 ## Papers from the LLM4HW team

@@ -4,7 +4,8 @@ title: LLM4HW papers
 permalink: /papers
 ---
 
-## Papers from the LLM4HW team
+## Papers from the LLM4HW team:
+
 
 <div class="papers-container">
     <div class="paper">

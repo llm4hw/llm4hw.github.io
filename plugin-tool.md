@@ -11,13 +11,17 @@ permalink: /plugin-tool
 ### Contents 
 
 [Overall .................................................................................................................... 2 ](#_page1_x69.00_y72.92)
+
 [Install and setup environment ................................................................................... 2 ](#_page1_x69.00_y214.92)
+
 [Hardware Project Setup............................................................................................ 2 ](#_page1_x69.00_y323.92)
 
 [Create a Project in Vivado: .................................................................................... 2 ](#_page1_x69.00_y365.92)
 
 [Add a Custom Button: ........................................................................................... 2 ](#_page1_x69.00_y422.92)
+
 [Configure the Tcl Script: ........................................................................................... 4 ](#_page3_x69.00_y191.92)
+
 [Usage...................................................................................................................... 6 ](#_page4_x69.00_y593.92)
 
 ### <a name="_page1_x69.00_y72.92"></a>Overall 
@@ -32,7 +36,7 @@ instant responses and solutions directly within the Vivado environment.
 
 ### <a name="_page1_x69.00_y214.92"></a>Install and setup environment 
 
-Follow the instructions provided at [LLM4HW to ](https://pypi.org/project/LLM4HW/)install the necessary packages and system dependencies.
+Follow the instructions provided at [LLM4HW to ](https://pypi.org/project/LLM4HW/) and install the necessary packages and system dependencies.
 
 You can download using pip install LLM4HW
 
@@ -44,14 +48,14 @@ You can download using pip install LLM4HW
 
 #### <a name="_page1_x69.00_y422.92"></a>Add a Custom Button: 
 
-- Navigate to Tools > Custom Commands > Customize Commands…
+- Navigate to Tools > Custom Commands > Customize Commands… (shown as Figure 1)
 - Create your own Tcl button by clicking on the “+” to add a new Custom Command. 
 
-  ![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.001.png)
+![Figure 1](/picture/picture1.png)
 
 - Enter a unique command name, e.g., LLM4HW, and press Enter.
 
-  ![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.002.png)
+  ![Figure 2](/picture/picture2.png)
 
 - Set up the custom command
 - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW). 
@@ -60,11 +64,11 @@ You can download using pip install LLM4HW
 - Click on “Add to the Toolbar” and then click Apply. 
 - Click OK. 
 
-![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.003.jpeg)
+![Figure 3](/picture/picture3.png)
 
 Now, you should see a new button on the top toolbar in Vivado.
 
-![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.004.png)
+![Figure 4](/picture/picture4.png)
 
 ### <a name="_page3_x69.00_y191.92"></a>Configure the Tcl Script: 
 
@@ -75,75 +79,63 @@ python -c "import tkinter as tk; import os; root = tk.Tk(); tcl\_lib = root.tk.e
 
 2. Find the location of the Python executable:
    - Use the command: where python
-3. Open script.tcl and modify the commands according to the output of the previous ![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.005.png)steps. 
+3. Open script.tcl and modify the commands according to the output of the previous steps.
+   ```
+    unset -nocomplain ::env(PYTHONHOME)
+    unset -nocomplain ::env(PYTHONPATH)
+    #! /usr/bin/tclsh
+    proc call_python {} {
+        set env(TCL_LIBRARY) <tcl library location>
+        set env(TK_LIBRARY) <tk library loaction>
+        set python_script_path <the location path you download for client.py>
+        set python_exe <location of the python.exe on your system>
+        set project_path [get_property DIRECTORY [current_project]]
+        set output [exec $python_exe $python_script_path $project_path]
+        puts $output
+    }
+    call_python
+  
+     ``` 
 
-unset -nocomplain ::env(PYTHONHOME)![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.006.png)
+For example, if you follow this step-by-step guide, you will expect the commands to look like the following: 
 
+```
+unset -nocomplain ::env(PYTHONHOME)
 unset -nocomplain ::env(PYTHONPATH)
-
 #! /usr/bin/tclsh
+proc call_python {} {
+    set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
+    set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
+    set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
+    set python_exe "D:\\app\\python.exe"
+    set project_path [get_property DIRECTORY [current_project]]
+    set output [exec $python_exe $python_script_path $project_path]
+    puts $output
+}
+call_python
 
-proc call\_python {} {
-
-set env(TCL\_LIBRARY) <tcl library location> 
-
-set env(TK\_LIBRARY) <tk library loaction> 
-
-set python\_script\_path <the location path you download for client.py> set python\_exe <location of the python.exe on your system>
-
-set project\_path [get\_property DIRECTORY [current\_project]]
-
-set output [exec $python\_exe $python\_script\_path $project\_path]
-
-puts $output
-
-} 
-
-call\_python
-
-For example, if you follow this step-by-step guide, you will expect the commands to ![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.007.png)look like the following: 
-
-unset -nocomplain ::env(PYTHONHOME)![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.008.png)
-
-unset -nocomplain ::env(PYTHONPATH)
-
-#! /usr/bin/tclsh
-
-proc call\_python {} {
-
-set env(TCL\_LIBRARY) "D:\\app\\tcl\\tcl8.6"
-
-set env(TK\_LIBRARY) "D:\\app\\tcl\\tk8.6"
-
-set python\_script\_path "D:\\chip chat\\llm-hw-help-annie\\new.py" set python\_exe "D:\\app\\python.exe"
-
-set project\_path [get\_property DIRECTORY [current\_project]]
-
-set output [exec $python\_exe $python\_script\_path $project\_path] puts $output
-
-} 
-
-call\_python
+```
 
 4. Before you use it, type the two commands (in script.tcl file) to TCL console first 
 
-set env(TCL\_LIBRARY) <tcl library location> set env(TK\_LIBRARY) <tk library loaction>
+`set env(TCL\_LIBRARY) <tcl library location> `
+`set env(TK\_LIBRARY) <tk library loaction>`
 
-![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.009.png)
+![Figure 5](/picture/picture5.png)
 
 5. Now,<a name="_page4_x69.00_y593.92"></a> the plugin tool is ready to be used in Vivado! 
 
-Usage 
+### Usage 
 
 **Operation:** 
 
-- Press the newly added button to open a new window. A default question is preset, and you can await the response.
+- Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
 
-![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.010.jpeg)
+![Figure 6](/picture/picture6.png)
 
 - If you have more questions, type them into the “Ask Follow Up Question” box.
 
-![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.011.jpeg)
+![Figure 7](/picture/picture7.png)
 
 **Completion:** 
 
@@ -151,4 +143,4 @@ Usage
 - We appreciate your feedback on the responses! 
 - **Please share your thoughts so we can continue to improve.**
 
-  ![](Aspose.Words.13674ef3-46ac-4876-91cd-7651cae642cf.012.jpeg)
+![Figure 8](/picture/picture8.png)

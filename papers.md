@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: others
 title: LLM4HW papers
 permalink: /papers
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: others
 title: Plugin Tool Setup
 permalink: /plugin-tool
 ---

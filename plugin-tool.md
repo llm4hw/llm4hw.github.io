@@ -37,7 +37,7 @@ You can download using `pip install LLM4HW`
 - Navigate to Tools > Custom Commands > Customize Commands… (shown as Figure 1)
 - Create your own Tcl button by clicking on the “+” to add a new Custom Command. 
 
-<img src="/picture/picture1.png" alt="Figure 1" style="width: 50%;">
+<img src="/picture/picture1.png" alt="Figure 1" style="width: 60%;">
 
 - Enter a unique command name, e.g., LLM4HW, and press Enter.
 

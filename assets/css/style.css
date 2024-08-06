@@ -25,18 +25,6 @@ header {
     font-size: 24px; /* Larger font size for header */
 }
 
-footer {
-    background-color: #333; /* Dark background for the footer */
-    color: white; /* White text color */
-    text-align: center; /* Center-align the text */
-    padding: 20px 0; /* Padding above and below the text */
-    margin-top: 20px; /* Space above the footer */
-}
-
-footer p {
-    margin: 5px 0; /* Space between paragraphs if there are multiple */
-}
-
 
 nav ul {
     list-style: none;
@@ -71,6 +59,18 @@ nav ul li a {
 
 .button:hover {
     background: #333; /* Darker background on hover */
+}
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center-align the text */
+    padding: 20px 0; /* Padding above and below the text */
+    margin-top: 20px; /* Space above the footer */
+}
+
+footer p {
+    margin: 5px 0; /* Space between paragraphs if there are multiple */
 }
 
 /* Add any additional styles as needed */

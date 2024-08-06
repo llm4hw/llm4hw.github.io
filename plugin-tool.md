@@ -37,11 +37,11 @@ You can download using `pip install LLM4HW`
 - Navigate to Tools > Custom Commands > Customize Commands… (shown as Figure 1)
 - Create your own Tcl button by clicking on the “+” to add a new Custom Command. 
 
-<img src="/picture/picture1.png" alt="Figure 1" style="width: 80%;">
+<img src="/picture/picture1.png" alt="Figure 1" style="width: 90%;">
 
 - Enter a unique command name, e.g., LLM4HW, and press Enter.
 
-  <img src="/picture/picture2.png" alt="Figure 2" style="width: 80%;">
+  <img src="/picture/picture2.png" alt="Figure 2" style="width: 90%;">
 
 - Set up the custom command
 - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW). 
@@ -50,7 +50,7 @@ You can download using `pip install LLM4HW`
 - Click on “Add to the Toolbar” and then click Apply. 
 - Click OK. 
 
-<img src="/picture/picture3.png" alt="Figure 3" style="width: 80%;">
+<img src="/picture/picture3.png" alt="Figure 3" style="width: 90%;">
 
 Now, you should see a new button on the top toolbar in Vivado.
 
@@ -97,22 +97,22 @@ unset -nocomplain ::env(PYTHONHOME)
     call_python
  ```
 
-For example, if you follow this step-by-step guide, you will expect the commands to look like the following: 
-```
-unset -nocomplain ::env(PYTHONHOME)
-unset -nocomplain ::env(PYTHONPATH)
-#! /usr/bin/tclsh
-proc call_python {} {
-    set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
-    set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
-    set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
-    set python_exe "D:\\app\\python.exe"
-    set project_path [get_property DIRECTORY [current_project]]
-    set output [exec $python_exe $python_script_path $project_path]
-    puts $output
-}
-call_python
-```
+  - For example, if you follow this step-by-step guide, you will expect the commands to look like the following: 
+  ```
+  unset -nocomplain ::env(PYTHONHOME)
+  unset -nocomplain ::env(PYTHONPATH)
+  #! /usr/bin/tclsh
+  proc call_python {} {
+      set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
+      set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
+      set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
+      set python_exe "D:\\app\\python.exe"
+      set project_path [get_property DIRECTORY [current_project]]
+      set output [exec $python_exe $python_script_path $project_path]
+      puts $output
+  }
+  call_python
+  ```
 
 4. Before you use it, type the two commands (in script.tcl file) to TCL console first 
 
@@ -120,7 +120,7 @@ call_python
 
 `set env(TK\_LIBRARY) <tk library loaction>`
 
-<img src="/picture/picture5.png" alt="Figure 5" style="width: 80%;">
+<img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
 
 5. Now, the plugin tool is ready to be used in Vivado! 
 
@@ -130,12 +130,12 @@ call_python
 
 - Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
 
-<img src="/picture/picture6.png" alt="Figure 6" style="width: 80%;">
+<img src="/picture/picture6.png" alt="Figure 6" style="width: 90%;">
 
 
 - If you have more questions, type them into the “Ask Follow Up Question” box.
 
-<img src="/picture/picture7.png" alt="Figure 7" style="width: 80%;">
+<img src="/picture/picture7.png" alt="Figure 7" style="width: 90%;">
 
 **Completion:** 
 
@@ -144,4 +144,4 @@ call_python
 - **Please share your thoughts so we can continue to improve.**
 
 ![Figure 8](/picture/picture8.png)
-<img src="/picture/picture8.png" alt="Figure 8" style="width: 80%;">
+<img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">

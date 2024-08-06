@@ -18,13 +18,7 @@ permalink: /plugin-tool
 - [Usage](#usage)
 ### Overall 
 
-This guide provides a step-by-step approach to setting up and using a custom Large Language Model (LLM) integration within Xilinx Vivado. By following these instructions, users will be able to create a new project in Vivado, add custom commands, and 
-
-configure Tcl scripts to facilitate seamless interactions with LLM tools. This setup aims 
-
-to enhance the hardware design process by leveraging LLM capabilities to provide 
-
-instant responses and solutions directly within the Vivado environment.
+This guide provides a step-by-step approach to setting up and using a custom Large Language Model (LLM) integration within Xilinx Vivado. By following these instructions, users will be able to create a new project in Vivado, add custom commands, and configure Tcl scripts to facilitate seamless interactions with LLM tools. This setup aims to enhance the hardware design process by leveraging LLM capabilities to provide instant responses and solutions directly within the Vivado environment.
 
 ### Install and setup environment 
 

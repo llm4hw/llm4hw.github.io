@@ -143,5 +143,4 @@ unset -nocomplain ::env(PYTHONHOME)
 - We appreciate your feedback on the responses! 
 - **Please share your thoughts so we can continue to improve.**
 
-![Figure 8](/picture/picture8.png)
 <img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">

@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Use a modern sans-serif font */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background: #fff;
@@ -22,9 +22,8 @@ header {
     background: #000;
     color: #fff;
     padding: 10px 0;
-    font-size: 24px; /* Larger font size for header */
+    font-size: 24px;
 }
-
 
 nav ul {
     list-style: none;
@@ -36,11 +35,11 @@ nav ul {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Add padding for larger touch targets */
+    padding: 10px 20px;
 }
 
 .main-title {
-    font-size: 48px; /* Very large title size */
+    font-size: 48px;
     margin: 20px 0;
     text-align: center;
 }
@@ -58,19 +57,60 @@ nav ul li a {
 }
 
 .button:hover {
-    background: #333; /* Darker background on hover */
+    background: #333;
 }
 
 footer {
-    background-color: #333; /* Dark background for the footer */
-    color: white; /* White text color */
-    text-align: center; /* Center-align the text */
-    padding: 20px 0; /* Padding above and below the text */
-    margin-top: 20px; /* Space above the footer */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
 footer p {
-    margin: 5px 0; /* Space between paragraphs if there are multiple */
+    margin: 5px 0;
 }
 
-/* Add any additional styles as needed */
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* Hidden by default on small screens */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #000;
+    }
+
+    nav ul.active {
+        display: flex; /* Show navigation when active */
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .hamburger span {
+        background-color: white;
+        height: 3px;
+        width: 25px;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-title {
+        font-size: 32px;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

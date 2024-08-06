@@ -8,8 +8,14 @@ permalink: /plugin-tool
 
 ### Siyu Qiu 
 
-* TOC
-{:toc}
+## Table of Contents
+- [Overall](#overall)
+- [Install and Setup Environment](#install-and-setup-environment)
+- [Hardware Project Setup](#hardware-project-setup)
+  - [Create a Project in Vivado](#create-a-project-in-vivado)
+  - [Add a Custom Button](#add-a-custom-button)
+  - [Configure the Tcl Script](#configure-the-tcl-script)
+- [Usage](#usage)
 
 <details>
   <summary>Overall</summary>
@@ -24,7 +30,7 @@ permalink: /plugin-tool
 <details>
   <summary>Hardware Project Setup</summary>
   <details>
-    <summary>Create a Project in Vivado</summary>
+    <p>Create a Project in Vivado</p>
     <p>Open Vivado and create a new project.</p>
   </details>
   <details>
@@ -55,7 +61,24 @@ permalink: /plugin-tool
     <pre><code>python -c "import tkinter as tk; root = tk.Tk(); print('Tcl version:', root.tk.call('info', 'patchlevel')); print('Tk version:', root.tk.call('info', 'patchlevel')); root.destroy()"</code></pre>
     <p>Find the location of the Python executable:
     <pre><code>where python</code></pre>
-    <p>Modify the commands in your script.tcl according to the output of the previous steps.</p>
+    <p>Open script.tcl and modify the commands according to the output of the previous steps.</p>
+    <pre><code>unset -nocomplain ::env(PYTHONHOME)
+unset -nocomplain ::env(PYTHONPATH)
+#! /usr/bin/tclsh
+proc call_python {} {
+    set env(TCL_LIBRARY) <tcl library location>
+    set env(TK_LIBRARY) <tk library loaction>
+    set python_script_path <the location path you download for client.py>
+    set python_exe <location of the python.exe on your system>
+    set project_path [get_property DIRECTORY [current_project]]
+    set output [exec $python_exe $python_script_path $project_path]
+    puts $output
+}
+call_python
+
+    </code></pre>
+
+    <p>For example, if you follow this step-by-step guide, you will expect the commands to look like the following:</p>
     <pre><code>unset -nocomplain ::env(PYTHONHOME)
 unset -nocomplain ::env(PYTHONPATH)
 #! /usr/bin/tclsh
@@ -69,7 +92,9 @@ proc call_python {} {
     puts $output
 }
 call_python
+
     </code></pre>
+    
   </details>
 </details>
 

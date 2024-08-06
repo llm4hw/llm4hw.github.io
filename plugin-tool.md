@@ -28,9 +28,9 @@ instant responses and solutions directly within the Vivado environment.
 
 ### Install and setup environment 
 
-Follow the instructions provided at [LLM4HW to ](https://pypi.org/project/LLM4HW/) and install the necessary packages and system dependencies.
+Follow the instructions provided at [LLM4HW](https://pypi.org/project/LLM4HW/) to install the necessary packages and system dependencies.
 
-You can download using pip install LLM4HW
+You can download using `pip install LLM4HW`
 
 ### Hardware Project Setup  
 

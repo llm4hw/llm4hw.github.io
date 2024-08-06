@@ -37,11 +37,11 @@ You can download using `pip install LLM4HW`
 - Navigate to Tools > Custom Commands > Customize Commands… (shown as Figure 1)
 - Create your own Tcl button by clicking on the “+” to add a new Custom Command. 
 
-<img src="/picture/picture1.png" alt="Figure 1" style="width: 60%;">
+<img src="/picture/picture1.png" alt="Figure 1" style="width: 80%;">
 
 - Enter a unique command name, e.g., LLM4HW, and press Enter.
 
-  ![Figure 2](/picture/picture2.png)
+  <img src="/picture/picture2.png" alt="Figure 2" style="width: 80%;">
 
 - Set up the custom command
 - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW). 
@@ -50,7 +50,7 @@ You can download using `pip install LLM4HW`
 - Click on “Add to the Toolbar” and then click Apply. 
 - Click OK. 
 
-![Figure 3](/picture/picture3.png)
+<img src="/picture/picture3.png" alt="Figure 3" style="width: 80%;">
 
 Now, you should see a new button on the top toolbar in Vivado.
 
@@ -60,9 +60,7 @@ Now, you should see a new button on the top toolbar in Vivado.
 
 1. Determine the Tcl and Tk versions used by Python's Tkinter:
 - Open your command prompt and type the following:
-```
-python -c "import tkinter as tk; import os; root = tk.Tk(); tcl_lib = root.tk.eval('info library'); tk_lib = root.tk.eval('info library'); print('Tcl version:', root.tk.call('info', 'patchlevel')); print('Tk version:', root.tk.call('info', 'patchlevel')); print('Tcl library location:', tcl_lib); print('Tk library location:', tk_lib); root.destroy()"
-```
+<pre><code>python -c "import tkinter as tk; import os; root = tk.Tk(); tcl_lib = root.tk.eval('info library'); tk_lib = root.tk.eval('info library'); print('Tcl version:', root.tk.call('info', 'patchlevel')); print('Tk version:', root.tk.call('info', 'patchlevel')); print('Tcl library location:', tcl_lib); print('Tk library location:', tk_lib); root.destroy()"</code></pre>
 2. Find the location of the Python executable:
    - Use the command: `where python`
 3. Open script.tcl and modify the commands according to the output of the previous steps.
@@ -105,7 +103,7 @@ call_python
 
 `set env(TK\_LIBRARY) <tk library loaction>`
 
-![Figure 5](/picture/picture5.png)
+<img src="/picture/picture5.png" alt="Figure 5" style="width: 80%;">
 
 5. Now, the plugin tool is ready to be used in Vivado! 
 
@@ -115,12 +113,12 @@ call_python
 
 - Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
 
-![Figure 6](/picture/picture6.png)
+<img src="/picture/picture6.png" alt="Figure 6" style="width: 80%;">
 
 
 - If you have more questions, type them into the “Ask Follow Up Question” box.
 
-![Figure 7](/picture/picture7.png)
+<img src="/picture/picture7.png" alt="Figure 7" style="width: 80%;">
 
 **Completion:** 
 
@@ -129,3 +127,4 @@ call_python
 - **Please share your thoughts so we can continue to improve.**
 
 ![Figure 8](/picture/picture8.png)
+<img src="/picture/picture8.png" alt="Figure 8" style="width: 80%;">

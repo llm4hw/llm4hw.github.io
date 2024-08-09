@@ -125,7 +125,7 @@ footer p {
 }
 
 .paper {
-    flex: 0 0 calc(50% - 10px); /* Ensures each box takes up half the row minus gap, without growing or shrinking */
+    flex: 0 0 calc(30% - 10px); /* Ensures each box takes up half the row minus gap, without growing or shrinking */
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 20px;

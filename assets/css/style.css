@@ -127,7 +127,7 @@ footer p {
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 20px;
-    width: calc(45% - 20px); /* Adjust width for 3 boxes in a row, accounting for gap */
+    width: calc(40% - 20px); /* Adjust width for 3 boxes in a row, accounting for gap */
     background-color: #fff;
     margin-bottom: 20px; /* Adds space between rows */
 }

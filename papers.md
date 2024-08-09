@@ -16,3 +16,13 @@ permalink: /papers
         <span class="year">2024</span>
     </div>
 </div>
+
+<div class="papers-container">
+    <div class="paper">
+        <h3>Chip-Chat: Challenges and Opportunities in Conversational Hardware Design</h3>
+        <p>MLCAD'23</p>
+        <p>Modern hardware design starts with specifications provided in natural language. These are then translated by hardware engineers into appropriate Hardware Description Languages (HDLs) such as Verilog before synthesizing circuit elements. Automating this translation could reduce sources of human error from the engineering process. But, it is only recently that artificial intelligence (AI) has demonstrated capabilities for machine-based end-to-end design translations.....</p>
+        <a href="https://arxiv.org/abs/2305.13243" class="button">Read more →</a>
+        <span class="year">2023</span>
+    </div>
+</div>

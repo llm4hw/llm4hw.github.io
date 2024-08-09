@@ -114,3 +114,57 @@ footer p {
         font-size: 14px;
     }
 }
+
+/* Paper box styles */
+.papers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around; /* Ensures even spacing and center alignment */
+}
+
+.paper {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(33% - 20px); /* Adjust width for 3 boxes in a row, accounting for gap */
+    background-color: #fff;
+    margin-bottom: 20px; /* Adds space between rows */
+}
+
+.paper h3 {
+    color: #333;
+}
+
+.paper p {
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.year {
+    float: right;
+    font-weight: bold;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .paper {
+        width: calc(50% - 20px); /* Two boxes per row on medium screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .paper {
+        width: 100%; /* Full width for small screens */
+    }
+}
+

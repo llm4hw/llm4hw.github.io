@@ -4,10 +4,7 @@ title: Grants
 permalink: /grants
 ---
 
-
-# Grants
-
-We thank all our supporters for their generous contributions.
+## We thank all our supporters for their generous contributions.
 
 <div class="papers-container">
     <div class="paper">

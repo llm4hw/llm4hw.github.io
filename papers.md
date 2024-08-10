@@ -18,6 +18,31 @@ permalink: /papers
     </div>
 </div>
 
+
+<div class="papers-container">
+    <div class="paper">
+        <h3>Evaluating LLMs for Hardware Design and Test</h3>
+        <p class="authors">Jason Blocklove, Siddharth Garg, Ramesh Karri, Hammond Pearce</p>
+        <p>ISLAD'24</p>
+        <p>Large Language Models (LLMs) have demonstrated capabilities for producing code in Hardware Description Languages (HDLs). However, most of the focus remains on their abilities to write functional code, not test code. The hardware design process consists of both design and test....</p>
+        <a href="https://arxiv.org/abs/2405.02326" class="button">Read more →</a>
+        <span class="year">2024</span>
+    </div>
+</div>
+
+
+<div class="papers-container">
+    <div class="paper">
+        <h3>Verigen: A large language model for verilog code generation</h3>
+        <p class="authors">Shailja Thakur, Baleegh Ahmad, Hammond Pearce, Benjamin Tan, Brendan Dolan-Gavitt, Ramesh Karri, Siddharth Garg</p>
+        <p>ACM</p>
+        <p>In this study, we explore the capability of Large Language Models (LLMs) to automate hardware design by automatically completing partial Verilog code, a common language for designing and modeling digital systems. We fine-tune pre-existing LLMs on Verilog datasets compiled from GitHub and Verilog textbooks....</p>
+        <a href="https://dl.acm.org/doi/abs/10.1145/3643681" class="button">Read more →</a>
+        <span class="year">2024</span>
+    </div>
+</div>
+
+
 <div class="papers-container">
     <div class="paper">
         <h3>Chip-Chat: Challenges and Opportunities in Conversational Hardware Design</h3>

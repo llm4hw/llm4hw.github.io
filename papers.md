@@ -42,6 +42,17 @@ permalink: /papers
     </div>
 </div>
 
+<div class="papers-container">
+    <div class="paper">
+        <h3>On hardware security bug code fixes by prompting large language models</h3>
+        <p class="authors">Baleegh Ahmad, Shailja Thakur, Benjamin Tan, Ramesh Karri, Hammond Pearce</p>
+        <p>IEEE Transactions on Information Forensics and Security</p>
+        <p>Novel AI-based code-writing Large Language Models (LLMs) such as OpenAI’s Codex have demonstrated capabilities in many coding-adjacent domains. In this work, we consider how LLMs may be leveraged to automatically repair identified security-relevant bugs present in hardware designs by generating replacement code...</p>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10462177" class="button">Read more →</a>
+        <span class="year">2024</span>
+    </div>
+</div>
+
 
 <div class="papers-container">
     <div class="paper">

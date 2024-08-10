@@ -22,7 +22,7 @@ We thank all our supporters for their generous contributions.
 
 <div class="papers-container">
     <div class="paper">
-        <h3>UNSW Small Equipment Grant</h3></h3>
+        <h3>UNSW Small Equipment Grant</h3>
         <p class="authors">UNSW</p>
         <p>AU$35,000</p>
         <p>"Inference Server for Education-focused LLMs"</p>
@@ -32,7 +32,7 @@ We thank all our supporters for their generous contributions.
 
 <div class="papers-container">
     <div class="paper">
-        <h3>Woodpecker Technologies</h3></h3>
+        <h3>Woodpecker Technologies</h3>
         <p class="authors">Woodpecker</p>
         <p>Taste of Research Scholarship</p>
         <p>"Chip Chat: Towards Conversational Hardware Development" </p>

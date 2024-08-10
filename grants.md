@@ -9,20 +9,36 @@ permalink: /grants
 
 We thank all our supporters for their generous contributions.
 
-## Google Award for inclusion research program
+<div class="papers-container">
+    <div class="paper">
+        <h3>Intel research award</h3>
+        <p class="authors">Intel</p>
+        <p>US$90,000</p>
+        <p>"IF-THEN-AI - Improving Feedback of Tools for Hardware Engineering with Generative AI"</p>
+        /*<a href="https://example.com/link-to-more-info" class="button">Read more →</a>*/
+        <span class="year">2023-2024</span>
+    </div>
+</div>
 
-**Google**  
-$100,000 AUD
 
-This grant presents the Debugging C Compiler (DCC), a system that composes a suite of compilers with static and dynamic analysis tools to support introductory C programming students. Using C in our introductory computing courses exposes...
+<div class="papers-container">
+    <div class="paper">
+        <h3>UNSW Small Equipment Grant</h3></h3>
+        <p class="authors">UNSW</p>
+        <p>AU$35,000</p>
+        <p>"Inference Server for Education-focused LLMs"</p>
+        /*<a href="https://example.com/link-to-more-info" class="button">Read more →</a>*/
+        <span class="year">2024</span>
+    </div>
+</div>
 
-[Read more about this project](https://arxiv.org/abs/your-link-here)
-
-## UNSW Faculty of Engineering EFFECT Grant
-
-**UNSW Faculty of Engineering**  
-$15,000 AUD
-
-This project involves developing a web-based extension that will provide a natural conversational prompts during compiler error debugging.
-
-[Read more about this project](https://arxiv.org/abs/your-link-here)
+<div class="papers-container">
+    <div class="paper">
+        <h3>Woodpecker Technologies</h3></h3>
+        <p class="authors">Woodpecker</p>
+        <p>Taste of Research Scholarship</p>
+        <p>"Chip Chat: Towards Conversational Hardware Development" </p>
+        /*<a href="https://example.com/link-to-more-info" class="button">Read more →</a>*/
+        <span class="year">2024</span>
+    </div>
+</div>

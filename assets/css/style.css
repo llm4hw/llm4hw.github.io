@@ -17,6 +17,7 @@ body {
     width: 80%;
     margin: 0 auto; /* Keeps the container centered horizontally */
     padding: 20px;
+    text-align: center; /* Centers text horizontally within its container */
 }
 
 

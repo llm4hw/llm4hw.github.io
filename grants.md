@@ -5,7 +5,7 @@ permalink: /grants
 ---
 
 <div class="header-text">
-    <h1>We thank all our supporters for their generous contributions.</h1>
+    <h1>We thank and acknowledge our grant sponsors.</h1>
 </div>
 
 <div class="papers-container">

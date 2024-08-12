@@ -3,25 +3,20 @@ layout: others
 title: Plugin Tool Setup
 permalink: /plugin-tool
 ---
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Make sure your CSS file is correctly linked -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1 class="tutorial-title">LLM Tools on Vivado Setup Guide </h1>
-            <h2 class="tutorial-subtitle">Siyu Qiu </h2>
-            <p class="tutorial-date">Posted on Aug, 2024</p>
-        </header>
+        <h1 class="tutorial-title">LLM Tools on Vivado Setup Guide </h1>
+        <h2 class="tutorial-subtitle">Siyu Qiu </h2>
+        <p class="tutorial-date">Posted on Aug, 2024</p>
       
-        <footer>
-            <p class="tutorial-tags">Tags: tutorial, LLM, vivado, tooling, debugging, HDL</p>
-        </footer>
+        <p class="tutorial-tags">Tags: tutorial, LLM, vivado, tooling, debugging, HDL</p>
     </div>
 </body>
 </html>

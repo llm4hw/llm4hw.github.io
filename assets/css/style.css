@@ -11,24 +11,19 @@ body {
     color: #333;
     background: #fff;
 }
-.centered-container {
-    display: flex;
-    justify-content: center; /* Aligns horizontally */
-    align-items: center; /* Aligns vertically */
-    height: 100vh; /* Full height of the viewport */
-}
-
-.centered-title {
-    font-size: 32px; /* Example font size */
-    font-weight: bold;
-}
 
 
 .container {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers content vertically within the container */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* Sets the height of the container to be the full height of the viewport */
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto; /* Keeps the container centered horizontally */
     padding: 20px;
 }
+
 
 header {
     background: #000;

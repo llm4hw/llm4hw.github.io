@@ -14,7 +14,6 @@ body {
 
 
 .container {
-    align-items: center; /* Centers content horizontally */
     width: 80%;
     margin: 0 auto; /* Keeps the container centered horizontally */
     padding: 20px;

@@ -72,6 +72,45 @@ footer p {
     margin: 5px 0;
 }
 
+
+/* Specific styles for tutorial pages */
+.tutorial-title {
+    font-size: 36px; /* Adjust size as necessary */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between title and subtitle */
+}
+
+.tutorial-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.tutorial-date {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tutorial-content {
+    font-size: 18px; /* Ensuring readability */
+    color: #333; /* Darker text for better readability */
+    line-height: 1.6; /* Adequate line spacing */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.container h1, .container h2, .container p {
+    text-align: left; /* Align text to the left for standard reading */
+}
+
+.tutorial-tags {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     nav ul {

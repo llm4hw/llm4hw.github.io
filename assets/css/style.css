@@ -11,6 +11,18 @@ body {
     color: #333;
     background: #fff;
 }
+.centered-container {
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center; /* Aligns vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.centered-title {
+    font-size: 32px; /* Example font size */
+    font-weight: bold;
+}
+
 
 .container {
     width: 80%;

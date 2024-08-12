@@ -14,8 +14,6 @@ body {
 
 
 .container {
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers content vertically within the container */
     align-items: center; /* Centers content horizontally */
     width: 80%;
     margin: 0 auto; /* Keeps the container centered horizontally */

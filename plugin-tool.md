@@ -106,10 +106,10 @@ permalink: /plugin-tool
         unset -nocomplain ::env(PYTHONPATH)
         #! /usr/bin/tclsh
         proc call_python {} {
-            set env(TCL_LIBRARY) 
-            set env(TK_LIBRARY) 
-            set python_script_path <>
-            set python_exe 
+            set env(TCL_LIBRARY) &lt;tcl library location&gt;
+            set env(TK_LIBRARY) &lt;tk library loaction&gt;
+            set python_script_path &lt;the location path you download for client.py&gt;
+            set python_exe &lt;location of the python.exe on your system&gt;
             set project_path [get_property DIRECTORY [current_project]]
             set output [exec $python_exe $python_script_path $project_path]
             puts $output
@@ -119,7 +119,7 @@ permalink: /plugin-tool
 </pre>
 
         <div style="padding-left: 20px;">
-            For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
+             <p>For example, if you follow this step-by-step guide, you will expect the commands to look like the following: </p>
         </div>
     <pre class="codeStyle"><code>
         unset -nocomplain ::env(PYTHONHOME)
@@ -144,17 +144,16 @@ permalink: /plugin-tool
         <p>5. Now, the plugin tool is ready to be used in Vivado! </p>
         
         <h2 id="usage">Usage</h2>
-        <p><strong>Operation:</strong>
-    Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
-        </p>
+        <p><strong>Operation:</strong></p>
+    <p>Press the newly added button to open a new window. A default question is preset, and you can wait for your response.</p>
         <img src="/picture/picture6.png" alt="Figure 6" style="width: 90%;">
         
-    If you have more questions, type them into the “Ask Follow Up Question” box.
+    <p>If you have more questions, type them into the “Ask Follow Up Question” box.</p>
         <img src="/picture/picture7.png" alt="Figure 7" style="width: 90%;">
         
         <p><strong>Completion:</strong></p>
-    Once you have received your response and know how to proceed, press the exit button to close the tool.
-    We appreciate your feedback on the responses!
-    <strong>Please share your thoughts so we can continue to improve.</strong>
+    <p>Once you have received your response and know how to proceed, press the exit button to close the tool.</p>
+    <p>We appreciate your feedback on the responses!</p>
+    <p>strong>Please share your thoughts so we can continue to improve.</strong></p>
         <img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">
 

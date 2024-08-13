@@ -1,22 +1,10 @@
 ---
 layout: others
+title: LLM4HW papers
 permalink: /papers
 ---
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="tutorial-title">LLM4HW papers </h1>
-        <h2 class="tutorial-subtitle">Papers from the LLM4HW team: </h2>
-    </div>
-</body>
-</html>
-
+## Papers from the LLM4HW team:
 <div class="papers-container">
     <div class="paper">
         <h3>Explaining EDA synthesis errors with LLMs</h3>

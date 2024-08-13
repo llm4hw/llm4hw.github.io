@@ -33,21 +33,21 @@ permalink: /plugin-tool
             <li><a href="#usage">Usage</a></li>
         </ul>
         
-        <h3 id="overall">Overall</h3>
+        <h2 id="overall">Overall</h2>
         <p>This guide provides a step-by-step approach to setting up and using a custom Large Language Model (LLM) integration within Xilinx Vivado. By following these instructions, users will be able to create a new project in Vivado, add custom commands, and configure Tcl scripts to facilitate seamless interactions with LLM tools. This setup aims to enhance the hardware design process by leveraging LLM capabilities to provide instant responses and solutions directly within the Vivado environment. </p>
         
-        <h3 id="install-and-setup-environment">Install and setup environment</h3>
+        <h2 id="install-and-setup-environment">Install and setup environment</h2>
         
         <p>Follow the instructions provided at <a href="https://pypi.org/project/LLM4HW/">LLM4HW</a> to install the necessary packages and system dependencies.</p>
         <p>You can download using <code>pip install LLM4HW</code></p>
         
         
         
-        <h3 id="hardware-project-setup">Hardware Project Setup</h3>
-        <h4>Create a Project in Vivado:</h4>
+        <h2 id="hardware-project-setup">Hardware Project Setup</h2>
+        <h3>Create a Project in Vivado:</h3>
         <p>Open Vivado and create a new project.</p>
         
-        <h4>Add a Custom Button:</h4>
+        <h3>Add a Custom Button:</h3>
         
         <p>Navigate to Tools &gt; Custom Commands &gt; Customize Commands… (shown as Figure 1)</p>
         <p>Create your own Tcl button by clicking on the “+” to add a new Custom Command.</p>
@@ -59,18 +59,18 @@ permalink: /plugin-tool
         
         <p>Set up the custom command</p>
         <ul>
-            <li><strong>Menu Name:</strong> Give a distinctive name to the button (e.g., LLM4HW).</li>
-            <li><strong>Description:</strong> Enter "Waiting LLM response."</li>
-            <li><strong>Source Tcl File:</strong> Browse and select the direction of your script.tcl file.</li>
-            <li>Click on “Add to the Toolbar” and then click Apply.</li>
-            <li>Click OK.</li>
+            - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW). 
+            - **Description:** Enter "Waiting LLM response." 
+            - **Source Tcl File:** Browse and select the direction of your script.tcl file. 
+            - Click on “Add to the Toolbar” and then click Apply. 
+            - Click OK. 
         </ul>
         <img src="/picture/picture3.png" alt="Figure 3" style="width: 90%;">
         
         <p>Now, you should see a new button on the top toolbar in Vivado.</p>
         <img src="/picture/picture4.png" alt="Figure 4">
         
-        <h4>Configure the Tcl Script:</h4>
+        <h3>Configure the Tcl Script:</h3>
         <p>1. Determine the Tcl and Tk versions used by Python's Tkinter:</p>
         
         <p>- Open your command prompt and type the following:</p>
@@ -148,7 +148,7 @@ permalink: /plugin-tool
         
         
         
-        <h3 id="usage">Usage</h3>
+        <h2 id="usage">Usage</h2>
         <p><strong>Operation:</strong></p>
         <p>Press the newly added button to open a new window. A default question is preset, and you can wait for your response.</p>
         <img src="/picture/picture6.png" alt="Figure 6" style="width: 90%;">

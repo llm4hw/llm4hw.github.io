@@ -113,8 +113,6 @@ permalink: /plugin-tool
         puts $output
     }
     call_python
-</code></pre>
-
 
         <div style="padding-left: 20px;">
             For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
@@ -134,6 +132,7 @@ permalink: /plugin-tool
         }
         call_python
     </code></pre>
+    
         <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
         <code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code>
         <code>set env(TK_LIBRARY) &lt;tk library location&gt;</code>

@@ -59,11 +59,11 @@ permalink: /plugin-tool
         
         <p>Set up the custom command</p>
         <ul>
-            <p>- **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW).</p> 
-            <p>- **Description:** Enter "Waiting LLM response." </p>
-            <p>- **Source Tcl File:** Browse and select the direction of your script.tcl file. </p>
-            <p>- Click on “Add to the Toolbar” and then click Apply. </p>
-            <p>- Click OK. </p>
+            <p>    - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW).</p> 
+            <p>    - **Description:** Enter "Waiting LLM response." </p>
+            <p>    - **Source Tcl File:** Browse and select the direction of your script.tcl file. </p>
+            <p>    - Click on “Add to the Toolbar” and then click Apply. </p>
+            <p>    - Click OK. </p>
         </ul>
         <img src="/picture/picture3.png" alt="Figure 3" style="width: 90%;">
         
@@ -73,7 +73,7 @@ permalink: /plugin-tool
         <h3>Configure the Tcl Script:</h3>
         <p>1. Determine the Tcl and Tk versions used by Python's Tkinter:</p>
         
-            <p>- Open your command prompt and type the following:</p>
+            <p>    - Open your command prompt and type the following:</p>
         <pre class="codeStyle">
             <code>
                 python -c "
@@ -96,7 +96,7 @@ permalink: /plugin-tool
         
         
         <p>2. Find the location of the Python executable:</p>
-            <p>Use the command: <code>where python</code></p>
+            <p>    Use the command: <code>where python</code></p>
         
         <p>3. Open script.tcl and modify the commands according to the output of the previous steps.</p>
         
@@ -138,13 +138,6 @@ permalink: /plugin-tool
         <p><code>set env(TK_LIBRARY) &lt;tk library location&gt;</code></p>
         <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
         
-        4. Before you use it, type the two commands (in script.tcl file) to TCL console first 
-        
-        `set env(TCL\_LIBRARY) <tcl library location> `
-        
-        `set env(TK\_LIBRARY) <tk library loaction>`
-        
-        <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
         
         <p> 5. Now, the plugin tool is ready to be used in Vivado! </p>
         

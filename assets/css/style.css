@@ -200,6 +200,10 @@ footer p {
     padding: 10px 15px;
 }
 
+.codeStyle{
+    color: "red";
+}
+
 .year {
     float: right;
     font-weight: bold;

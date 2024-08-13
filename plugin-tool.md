@@ -147,15 +147,17 @@ permalink: /plugin-tool
         
         <h2 id="usage">Usage</h2>
         <p><strong>Operation:</strong></p>
-        <p>Press the newly added button to open a new window. A default question is preset, and you can wait for your response.</p>
+        Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
         <img src="/picture/picture6.png" alt="Figure 6" style="width: 90%;">
         
-        <p>If you have more questions, type them into the “Ask Follow Up Question” box.</p>
+        If you have more questions, type them into the “Ask Follow Up Question” box.
         <img src="/picture/picture7.png" alt="Figure 7" style="width: 90%;">
         
         <p><strong>Completion:</strong></p>
-        <p>Once you have received your response and know how to proceed, press the exit button to close the tool.</p>
-        <p>We appreciate your feedback on the responses!</p>
-        <p><strong>Please share your thoughts so we can continue to improve.</strong></p>
+        <p>
+            Once you have received your response and know how to proceed, press the exit button to close the tool.
+            We appreciate your feedback on the responses!
+            <strong>Please share your thoughts so we can continue to improve.</strong>
+        </p>
         <img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">
 

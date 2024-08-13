@@ -21,13 +21,16 @@ permalink: /plugin-tool
                 
         <h2>Table of Contents</h2>
         <ul>
-            <p>- [Overall](#overall)</p>
-            <p>- [Install and Setup Environment](#install-and-setup-environment)</p>
-            <p>- [Hardware Project Setup](#hardware-project-setup)/<p>
-              <p>- [Create a Project in Vivado](#create-a-project-in-vivado)</p>
-              <p>- [Add a Custom Button](#add-a-custom-button)</p>
-              <p>- [Configure the Tcl Script](#configure-the-tcl-script)</p>
-            <p>- [Usage](#usage)<p>
+            <li><a href="#overall">Overall</a></li>
+            <li><a href="#install-and-setup-environment">Install and Setup Environment</a></li>
+            <li><a href="#hardware-project-setup">Hardware Project Setup</a>
+                <ul>
+                    <li><a href="#create-a-project-in-vivado">Create a Project in Vivado</a></li>
+                    <li><a href="#add-a-custom-button">Add a Custom Button</a></li>
+                    <li><a href="#configure-the-tcl-script">Configure the Tcl Script</a></li>
+                </ul>
+            </li>
+            <li><a href="#usage">Usage</a></li>
         </ul>
         
         <h2 id="overall">Overall</h2>

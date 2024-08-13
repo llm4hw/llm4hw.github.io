@@ -114,6 +114,8 @@ permalink: /plugin-tool
     }
     call_python
 </code></pre>
+
+
         <div style="padding-left: 20px;">
             For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
         </div>

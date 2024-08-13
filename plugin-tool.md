@@ -59,11 +59,11 @@ permalink: /plugin-tool
         
         <p>Set up the custom command</p>
         <ul>
-            - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW). 
-            - **Description:** Enter "Waiting LLM response." 
-            - **Source Tcl File:** Browse and select the direction of your script.tcl file. 
-            - Click on “Add to the Toolbar” and then click Apply. 
-            - Click OK. 
+            <p>- **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW).</p> 
+            <p>- **Description:** Enter "Waiting LLM response." </p>
+            <p>- **Source Tcl File:** Browse and select the direction of your script.tcl file. </p>
+            <p>- Click on “Add to the Toolbar” and then click Apply. </p>
+            <p>- Click OK. </p>
         </ul>
         <img src="/picture/picture3.png" alt="Figure 3" style="width: 90%;">
         
@@ -73,7 +73,7 @@ permalink: /plugin-tool
         <h3>Configure the Tcl Script:</h3>
         <p>1. Determine the Tcl and Tk versions used by Python's Tkinter:</p>
         
-        <p>- Open your command prompt and type the following:</p>
+            <p>- Open your command prompt and type the following:</p>
         <pre><code>
         python -c "
         import tkinter as tk
@@ -94,7 +94,7 @@ permalink: /plugin-tool
         
         
         <p>2. Find the location of the Python executable:</p>
-        <p>Use the command: <code>where python</code></p>
+            <p>Use the command: <code>where python</code></p>
         
         <p>3. Open script.tcl and modify the commands according to the output of the previous steps.</p>
         
@@ -114,7 +114,7 @@ permalink: /plugin-tool
             call_python
         </code></pre>
         
-          - For example, if you follow this step-by-step guide, you will expect the commands to look like the following: 
+              <p>- For example, if you follow this step-by-step guide, you will expect the commands to look like the following: </p>
           <pre><code>
           unset -nocomplain ::env(PYTHONHOME)
           unset -nocomplain ::env(PYTHONPATH)

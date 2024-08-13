@@ -58,13 +58,13 @@ permalink: /plugin-tool
         <img src="/picture/picture2.png" alt="Figure 2" style="width: 90%;">
         
         <p>Set up the custom command</p>
-        <ul>
-            <p>    - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW).</p> 
-            <p>    - **Description:** Enter "Waiting LLM response." </p>
-            <p>    - **Source Tcl File:** Browse and select the direction of your script.tcl file. </p>
-            <p>    - Click on “Add to the Toolbar” and then click Apply. </p>
-            <p>    - Click OK. </p>
-        </ul>
+        <div style="padding-left: 20px;">
+            <p>- <strong>Menu Name:</strong> Give a distinctive name to the button (e.g., LLM4HW).</p>
+            <p>- <strong>Description:</strong> Enter "Waiting LLM response."</p>
+            <p>- <strong>Source Tcl File:</strong> Browse and select the direction of your script.tcl file.</p>
+            <p>- Click on “Add to the Toolbar” and then click Apply.</p>
+            <p>- Click OK.</p>
+        </div>
         <img src="/picture/picture3.png" alt="Figure 3" style="width: 90%;">
         
         <p>Now, you should see a new button on the top toolbar in Vivado.</p>
@@ -72,27 +72,28 @@ permalink: /plugin-tool
         
         <h3>Configure the Tcl Script:</h3>
         <p>1. Determine the Tcl and Tk versions used by Python's Tkinter:</p>
+            <div style="padding-left: 20px;">
+                <p>- Open your command prompt and type the following:</p>
+            </div>
+<pre class="codeStyle">
+    <code>
+        python -c "
+        import tkinter as tk
+        import os
         
-            <p>    - Open your command prompt and type the following:</p>
-        <pre class="codeStyle">
-            <code>
-                python -c "
-                import tkinter as tk
-                import os
-                
-                root = tk.Tk()
-                tcl_lib = root.tk.eval('info library')
-                tk_lib = root.tk.eval('info library')
-                
-                print('Tcl version:', root.tk.call('info', 'patchlevel'))
-                print('Tk version:', root.tk.call('info', 'patchlevel'))
-                print('Tcl library location:', tcl_lib)
-                print('Tk library location:', tk_lib)
-                
-                root.destroy()
-                "
-            </code>
-        </pre>
+        root = tk.Tk()
+        tcl_lib = root.tk.eval('info library')
+        tk_lib = root.tk.eval('info library')
+        
+        print('Tcl version:', root.tk.call('info', 'patchlevel'))
+        print('Tk version:', root.tk.call('info', 'patchlevel'))
+        print('Tcl library location:', tcl_lib)
+        print('Tk library location:', tk_lib)
+        
+        root.destroy()
+        "
+    </code>
+</pre>
         
         
         <p>2. Find the location of the Python executable:</p>
@@ -100,38 +101,42 @@ permalink: /plugin-tool
         
         <p>3. Open script.tcl and modify the commands according to the output of the previous steps.</p>
         
-        <pre><code>
+<pre class="codeStyle">
+    <code>
         unset -nocomplain ::env(PYTHONHOME)
-            unset -nocomplain ::env(PYTHONPATH)
-            #! /usr/bin/tclsh
-            proc call_python {} {
-                set env(TCL_LIBRARY) <tcl library location>
-                set env(TK_LIBRARY) <tk library loaction>
-                set python_script_path <the location path you download for client.py>
-                set python_exe <location of the python.exe on your system>
-                set project_path [get_property DIRECTORY [current_project]]
-                set output [exec $python_exe $python_script_path $project_path]
-                puts $output
-            }
-            call_python
-        </code></pre>
+        unset -nocomplain ::env(PYTHONPATH)
+        #! /usr/bin/tclsh
+        proc call_python {} {
+            set env(TCL_LIBRARY) <tcl library location>
+            set env(TK_LIBRARY) <tk library loaction>
+            set python_script_path <the location path you download for client.py>
+            set python_exe <location of the python.exe on your system>
+            set project_path [get_property DIRECTORY [current_project]]
+            set output [exec $python_exe $python_script_path $project_path]
+            puts $output
+        }
+        call_python
+    </code>
+</pre>
         
               <p>- For example, if you follow this step-by-step guide, you will expect the commands to look like the following: </p>
-          <pre><code>
-          unset -nocomplain ::env(PYTHONHOME)
-          unset -nocomplain ::env(PYTHONPATH)
-          #! /usr/bin/tclsh
-          proc call_python {} {
-              set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
-              set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
-              set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
-              set python_exe "D:\\app\\python.exe"
-              set project_path [get_property DIRECTORY [current_project]]
-              set output [exec $python_exe $python_script_path $project_path]
-              puts $output
-          }
-          call_python
-          </code></pre>
+          <pre class="codeStyle">
+              <code>
+                  unset -nocomplain ::env(PYTHONHOME)
+                  unset -nocomplain ::env(PYTHONPATH)
+                  #! /usr/bin/tclsh
+                  proc call_python {} {
+                      set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
+                      set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
+                      set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
+                      set python_exe "D:\\app\\python.exe"
+                      set project_path [get_property DIRECTORY [current_project]]
+                      set output [exec $python_exe $python_script_path $project_path]
+                      puts $output
+                  }
+                  call_python
+            </code>
+        </pre>
         
         <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
         <p><code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code></p>
@@ -157,9 +162,3 @@ permalink: /plugin-tool
         <p><strong>Please share your thoughts so we can continue to improve.</strong></p>
         <img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">
 
-
-
-        
-    </div>
-</body>
-</html>

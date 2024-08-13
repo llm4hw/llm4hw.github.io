@@ -118,14 +118,14 @@ permalink: /plugin-tool
     </code>
 </pre>
             <div style="padding-left: 20px;">
-              <p>- For example, if you follow this step-by-step guide, you will expect the commands to look like the following: </p>
+                <p>- For example, if you follow this step-by-step guide, you will expect the commands to look like the following: </p>
               </div>
-          <pre class="codeStyle">
-              <code>
-                  unset -nocomplain ::env(PYTHONHOME)
-                  unset -nocomplain ::env(PYTHONPATH)
-                  #! /usr/bin/tclsh
-                  proc call_python {} {
+            <pre class="codeStyle">
+                <code>
+                    unset -nocomplain ::env(PYTHONHOME)
+                    unset -nocomplain ::env(PYTHONPATH)
+                    #! /usr/bin/tclsh
+                    proc call_python {} {
                       set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
                       set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
                       set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
@@ -133,10 +133,10 @@ permalink: /plugin-tool
                       set project_path [get_property DIRECTORY [current_project]]
                       set output [exec $python_exe $python_script_path $project_path]
                       puts $output
-                  }
-                  call_python
-            </code>
-        </pre>
+                    }
+                    call_python
+                </code>
+            </pre>
         
         <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
         <code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code>

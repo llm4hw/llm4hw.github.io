@@ -42,17 +42,14 @@ permalink: /plugin-tool
         <p>You can download using <code>pip install LLM4HW</code></p>
         
         
-        
         <h2 id="hardware-project-setup">Hardware Project Setup</h2>
-        <h3>Create a Project in Vivado:</h3>
+        <h2>Create a Project in Vivado:</h2>
         <p>Open Vivado and create a new project.</p>
         
-        <h3>Add a Custom Button:</h3>
-        
-        <p>Navigate to Tools &gt; Custom Commands &gt; Customize Commands… (shown as Figure 1)</p>
-        <p>Create your own Tcl button by clicking on the “+” to add a new Custom Command.</p>
+        <h2>Add a Custom Button:</h2>
+        <p>- Navigate to Tools &gt; Custom Commands &gt; Customize Commands… (shown as Figure 1)</p>
+        <p>- Create your own Tcl button by clicking on the “+” to add a new Custom Command.</p>
         <img src="/picture/picture1.png" alt="Figure 1" style="width: 90%;">
-        
         
         <p>Enter a unique command name, e.g., LLM4HW, and press Enter.</p>
         <img src="/picture/picture2.png" alt="Figure 2" style="width: 90%;">
@@ -66,11 +63,12 @@ permalink: /plugin-tool
             <p>- Click OK.</p>
         </div>
         <img src="/picture/picture3.png" alt="Figure 3" style="width: 90%;">
-        
+
         <p>Now, you should see a new button on the top toolbar in Vivado.</p>
         <img src="/picture/picture4.png" alt="Figure 4">
+
         
-        <h3>Configure the Tcl Script:</h3>
+        <h2>Configure the Tcl Script:</h2>
         <p>1. Determine the Tcl and Tk versions used by Python's Tkinter:</p>
             <div style="padding-left: 20px;">
                 <p>- Open your command prompt and type the following:</p>
@@ -97,8 +95,9 @@ permalink: /plugin-tool
         
         
         <p>2. Find the location of the Python executable:</p>
-            <p>    Use the command: <code>where python</code></p>
-        
+            <div style="padding-left: 20px;">
+                <p>Use the command: <code>where python</code></p>
+            </div>
         <p>3. Open script.tcl and modify the commands according to the output of the previous steps.</p>
         
 <pre class="codeStyle">
@@ -118,8 +117,9 @@ permalink: /plugin-tool
         call_python
     </code>
 </pre>
-        
+            <div style="padding-left: 20px;">
               <p>- For example, if you follow this step-by-step guide, you will expect the commands to look like the following: </p>
+              </div>
           <pre class="codeStyle">
               <code>
                   unset -nocomplain ::env(PYTHONHOME)
@@ -139,14 +139,11 @@ permalink: /plugin-tool
         </pre>
         
         <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
-        <p><code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code></p>
-        <p><code>set env(TK_LIBRARY) &lt;tk library location&gt;</code></p>
+        <code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code>
+        <code>set env(TK_LIBRARY) &lt;tk library location&gt;</code>
         <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
         
-        
         <p> 5. Now, the plugin tool is ready to be used in Vivado! </p>
-        
-        
         
         <h2 id="usage">Usage</h2>
         <p><strong>Operation:</strong></p>

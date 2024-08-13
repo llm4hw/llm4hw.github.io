@@ -93,7 +93,6 @@ permalink: /plugin-tool
     </code>
 </pre>
         
-        
         <p>2. Find the location of the Python executable:</p>
             <div style="padding-left: 20px;">
                 <p>Use the command: <code>where python</code></p>
@@ -117,9 +116,9 @@ permalink: /plugin-tool
         call_python
     </code>
 </pre>
-            <div style="padding-left: 20px;">
-                For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
-            </div>
+        <div style="padding-left: 20px;">
+            For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
+        </div>
     <pre class="codeStyle">
         <code>
             unset -nocomplain ::env(PYTHONHOME)
@@ -137,13 +136,13 @@ permalink: /plugin-tool
             call_python
         </code>
     </pre>
+        4. Before you use it, type the two commands (in script.tcl file) to TCL console first
         
-        <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
         <code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code>
         <code>set env(TK_LIBRARY) &lt;tk library location&gt;</code>
         <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
         
-        <p> 5. Now, the plugin tool is ready to be used in Vivado! </p>
+        5. Now, the plugin tool is ready to be used in Vivado! 
         
         <h2 id="usage">Usage</h2>
         <p><strong>Operation:</strong></p>

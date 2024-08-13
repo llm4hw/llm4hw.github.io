@@ -74,23 +74,25 @@ permalink: /plugin-tool
         <p>1. Determine the Tcl and Tk versions used by Python's Tkinter:</p>
         
             <p>- Open your command prompt and type the following:</p>
-        <pre><code>
-        python -c "
-        import tkinter as tk
-        import os
-        
-        root = tk.Tk()
-        tcl_lib = root.tk.eval('info library')
-        tk_lib = root.tk.eval('info library')
-        
-        print('Tcl version:', root.tk.call('info', 'patchlevel'))
-        print('Tk version:', root.tk.call('info', 'patchlevel'))
-        print('Tcl library location:', tcl_lib)
-        print('Tk library location:', tk_lib)
-        
-        root.destroy()
-        "
-        </code></pre>
+        <pre class="codeStyle">
+            <code>
+                python -c "
+                import tkinter as tk
+                import os
+                
+                root = tk.Tk()
+                tcl_lib = root.tk.eval('info library')
+                tk_lib = root.tk.eval('info library')
+                
+                print('Tcl version:', root.tk.call('info', 'patchlevel'))
+                print('Tk version:', root.tk.call('info', 'patchlevel'))
+                print('Tcl library location:', tcl_lib)
+                print('Tk library location:', tk_lib)
+                
+                root.destroy()
+                "
+            </code>
+        </pre>
         
         
         <p>2. Find the location of the Python executable:</p>

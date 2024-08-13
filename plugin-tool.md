@@ -99,54 +99,49 @@ permalink: /plugin-tool
             </div>
         <p>3. Open script.tcl and modify the commands according to the output of the previous steps.</p>
         
-<pre class="codeStyle">
-    <code>
+<pre class="codeStyle"><code>
+    unset -nocomplain ::env(PYTHONHOME)
+    unset -nocomplain ::env(PYTHONPATH)
+    #! /usr/bin/tclsh
+    proc call_python {} {
+        set env(TCL_LIBRARY) <tcl library location>
+        set env(TK_LIBRARY) <tk library loaction>
+        set python_script_path <the location path you download for client.py>
+        set python_exe <location of the python.exe on your system>
+        set project_path [get_property DIRECTORY [current_project]]
+        set output [exec $python_exe $python_script_path $project_path]
+        puts $output
+    }
+    call_python
+</code></pre>
+        <div style="padding-left: 20px;">
+            For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
+        </div>
+    <pre class="codeStyle"><code>
         unset -nocomplain ::env(PYTHONHOME)
         unset -nocomplain ::env(PYTHONPATH)
         #! /usr/bin/tclsh
         proc call_python {} {
-            set env(TCL_LIBRARY) <tcl library location>
-            set env(TK_LIBRARY) <tk library loaction>
-            set python_script_path <the location path you download for client.py>
-            set python_exe <location of the python.exe on your system>
-            set project_path [get_property DIRECTORY [current_project]]
-            set output [exec $python_exe $python_script_path $project_path]
-            puts $output
+          set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
+          set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
+          set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
+          set python_exe "D:\\app\\python.exe"
+          set project_path [get_property DIRECTORY [current_project]]
+          set output [exec $python_exe $python_script_path $project_path]
+          puts $output
         }
         call_python
-    </code>
-</pre>
-        <div style="padding-left: 20px;">
-            For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
-        </div>
-    <pre class="codeStyle">
-        <code>
-            unset -nocomplain ::env(PYTHONHOME)
-            unset -nocomplain ::env(PYTHONPATH)
-            #! /usr/bin/tclsh
-            proc call_python {} {
-              set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
-              set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
-              set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
-              set python_exe "D:\\app\\python.exe"
-              set project_path [get_property DIRECTORY [current_project]]
-              set output [exec $python_exe $python_script_path $project_path]
-              puts $output
-            }
-            call_python
-        </code>
-    </pre>
-        4. Before you use it, type the two commands (in script.tcl file) to TCL console first
-        
+    </code></pre>
+        <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
         <code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code>
         <code>set env(TK_LIBRARY) &lt;tk library location&gt;</code>
         <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
-        
-        5. Now, the plugin tool is ready to be used in Vivado! 
+        <p>5. Now, the plugin tool is ready to be used in Vivado! </p>
         
         <h2 id="usage">Usage</h2>
-        <p><strong>Operation:</strong></p>
+        <p><strong>Operation:</strong>
     Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
+        </p>
         <img src="/picture/picture6.png" alt="Figure 6" style="width: 90%;">
         
     If you have more questions, type them into the “Ask Follow Up Question” box.

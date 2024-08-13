@@ -118,25 +118,25 @@ permalink: /plugin-tool
     </code>
 </pre>
             <div style="padding-left: 20px;">
-                <p>- For example, if you follow this step-by-step guide, you will expect the commands to look like the following: </p>
-              </div>
-            <pre class="codeStyle">
-                <code>
-                    unset -nocomplain ::env(PYTHONHOME)
-                    unset -nocomplain ::env(PYTHONPATH)
-                    #! /usr/bin/tclsh
-                    proc call_python {} {
-                      set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
-                      set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
-                      set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
-                      set python_exe "D:\\app\\python.exe"
-                      set project_path [get_property DIRECTORY [current_project]]
-                      set output [exec $python_exe $python_script_path $project_path]
-                      puts $output
-                    }
-                    call_python
-                </code>
-            </pre>
+                For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
+            </div>
+    <pre class="codeStyle">
+        <code>
+            unset -nocomplain ::env(PYTHONHOME)
+            unset -nocomplain ::env(PYTHONPATH)
+            #! /usr/bin/tclsh
+            proc call_python {} {
+              set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
+              set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
+              set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
+              set python_exe "D:\\app\\python.exe"
+              set project_path [get_property DIRECTORY [current_project]]
+              set output [exec $python_exe $python_script_path $project_path]
+              puts $output
+            }
+            call_python
+        </code>
+    </pre>
         
         <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
         <code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code>
@@ -147,17 +147,15 @@ permalink: /plugin-tool
         
         <h2 id="usage">Usage</h2>
         <p><strong>Operation:</strong></p>
-        Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
+    Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
         <img src="/picture/picture6.png" alt="Figure 6" style="width: 90%;">
         
-        If you have more questions, type them into the “Ask Follow Up Question” box.
+    If you have more questions, type them into the “Ask Follow Up Question” box.
         <img src="/picture/picture7.png" alt="Figure 7" style="width: 90%;">
         
         <p><strong>Completion:</strong></p>
-        <p>
-            Once you have received your response and know how to proceed, press the exit button to close the tool.
-            We appreciate your feedback on the responses!
-            <strong>Please share your thoughts so we can continue to improve.</strong>
-        </p>
+    Once you have received your response and know how to proceed, press the exit button to close the tool.
+    We appreciate your feedback on the responses!
+    <strong>Please share your thoughts so we can continue to improve.</strong>
         <img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">
 

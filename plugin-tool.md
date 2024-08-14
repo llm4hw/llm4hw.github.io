@@ -138,8 +138,8 @@ permalink: /plugin-tool
     </code></pre>
     
         <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
-        <code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code>
-        <code>set env(TK_LIBRARY) &lt;tk library location&gt;</code>
+        <p><code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code></p>
+        <p><code>set env(TK_LIBRARY) &lt;tk library location&gt;</code></p>
         <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
         <p>5. Now, the plugin tool is ready to be used in Vivado! </p>
         

@@ -154,6 +154,6 @@ permalink: /plugin-tool
         <p><strong>Completion:</strong></p>
     <p>Once you have received your response and know how to proceed, press the exit button to close the tool.</p>
     <p>We appreciate your feedback on the responses!</p>
-    <p>strong>Please share your thoughts so we can continue to improve.</strong></p>
+    <p><strong>Please share your thoughts so we can continue to improve.</strong></p>
         <img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">
 

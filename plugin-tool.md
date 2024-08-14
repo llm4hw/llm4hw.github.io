@@ -108,7 +108,7 @@ permalink: /plugin-tool
         proc call_python {} {
             set env(TCL_LIBRARY) &lt;tcl library location&gt;
             set env(TK_LIBRARY) &lt;tk library loaction&gt;
-            set python_script_path &lt;the location path you download for client.py&gt;
+            set python_script_path &lt;the location path you download for new.py&gt;
             set python_exe &lt;location of the python.exe on your system&gt;
             set project_path [get_property DIRECTORY [current_project]]
             set output [exec $python_exe $python_script_path $project_path]

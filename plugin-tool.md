@@ -43,10 +43,10 @@ permalink: /plugin-tool
         
         
         <h2 id="hardware-project-setup">Hardware Project Setup</h2>
-        <h2>Create a Project in Vivado:</h2>
+        <h2 id="create-a-project-in-vivado">Create a Project in Vivado:</h2>
         <p>Open Vivado and create a new project.</p>
         
-        <h2>Add a Custom Button:</h2>
+        <h2 id="add-a-custom-button">Add a Custom Button:</h2>
         <p>- Navigate to Tools &gt; Custom Commands &gt; Customize Commands… (shown as Figure 1)</p>
         <p>- Create your own Tcl button by clicking on the “+” to add a new Custom Command.</p>
         <img src="/picture/picture1.png" alt="Figure 1" style="width: 90%;">
@@ -68,7 +68,7 @@ permalink: /plugin-tool
         <img src="/picture/picture4.png" alt="Figure 4">
 
         
-        <h2>Configure the Tcl Script:</h2>
+        <h2 id="configure-the-tcl-script">Configure the Tcl Script:</h2>
         <p>1. Determine the Tcl and Tk versions used by Python's Tkinter:</p>
             <div style="padding-left: 20px;">
                 <p>- Open your command prompt and type the following:</p>

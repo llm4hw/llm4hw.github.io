@@ -31,6 +31,7 @@ permalink: /plugin-tool
                 </ul>
             </li>
             <li><a href="#usage">Usage</a></li>
+            <li><a href="#video-tutorial">Video Tutorial</a></li>
         </ul>
         
         <h2 id="overall">Overall</h2>
@@ -156,4 +157,12 @@ permalink: /plugin-tool
     <p>We appreciate your feedback on the responses!</p>
     <p><strong>Please share your thoughts so we can continue to improve.</strong></p>
         <img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">
+
+
+        <h2 id="video-tutorial">Video Tutorial</h2>
+        <video controls width="90%">
+                <source src="video/LLM_response.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
 

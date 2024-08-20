@@ -116,7 +116,7 @@ footer {
 
 footer p {
     margin: 5px 0;
-    text-align: center;
+    text-align: center !important;
 }
 
 
@@ -147,7 +147,7 @@ footer p {
     margin-bottom: 20px; /* Space between paragraphs */
 }
 
-.container h1, .container h2 {
+.container h1, .container h2, .container p {
     text-align: left; /* Align text to the left for standard reading */
 }
 

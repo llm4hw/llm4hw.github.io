@@ -60,13 +60,13 @@ permalink: /plugin-tool
             <p>- Install <a href="https://pypi.org/project/LLM4HW/">LLM4HW</a> the <code>LLM4HW</code> with the necessary packages and system dependencies:</p>
             <pre><code>pip install LLM4HW</code></pre>
             <p>- Download and unzip the required files:</p>
-<pre>
-    <code>
-        curl -L -O https://github.com/annnnie-qiu/download/raw/c4a9d35a35a57f743e3fe1408c6b40e0ff148c6a/provide_to_students.zip
-        unzip provide_to_students.zip
-        rm provide_to_students.zip
-    </code>
-</pre>
+            <pre>
+                <code>
+                    curl -L -O https://github.com/annnnie-qiu/download/raw/c4a9d35a35a57f743e3fe1408c6b40e0ff148c6a/provide_to_students.zip
+                    unzip provide_to_students.zip
+                    rm provide_to_students.zip
+                </code>
+            </pre>
         </div>
         <p>Following these steps will ensure that all necessary packages and files are installed and set up correctly.</p>
         

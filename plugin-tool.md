@@ -82,7 +82,7 @@ permalink: /plugin-tool
         <div style="padding-left: 20px;">
             <p>- <strong>Menu Name:</strong> Give a distinctive name to the button (e.g., LLM4HW).</p>
             <p>- <strong>Description:</strong> Enter "Waiting LLM response."</p>
-            <p>- <strong>Source Tcl File:</strong> Browse and select the direction of your script.tcl file.</p>
+            <p>- <strong>Source Tcl File:</strong> Browse and select the direction of script.tcl file you download before.</p>
             <p>- Click on “Add to the Toolbar” and then click Apply.</p>
             <p>- Click OK.</p>
         </div>

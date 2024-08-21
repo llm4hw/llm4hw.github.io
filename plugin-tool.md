@@ -38,10 +38,32 @@ permalink: /plugin-tool
         <p>This guide provides a step-by-step approach to setting up and using a custom Large Language Model (LLM) integration within Xilinx Vivado. By following these instructions, users will be able to create a new project in Vivado, add custom commands, and configure Tcl scripts to facilitate seamless interactions with LLM tools. This setup aims to enhance the hardware design process by leveraging LLM capabilities to provide instant responses and solutions directly within the Vivado environment. </p>
         
         <h2 id="install-and-setup-environment">Install and setup environment</h2>
+
+        <p>To set up the environment for this tool, follow these steps:</p>
         
-        <p>Follow the instructions provided at <a href="https://pypi.org/project/LLM4HW/">LLM4HW</a> to install the necessary packages and system dependencies.</p>
-        <p>You can download using <code>pip install LLM4HW</code></p>
+        <h3>1. Download and Install Required Files:</h3>
+        <p>Use the following command to download the necessary installation script:</p>
+        <pre><code>curl -L -O https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh</code></pre>
+        <p>After downloading, run the script to install the required packages and files:</p>
+        <pre><code>sh install.sh</code></pre>
+        <p>This will:</p>
+        <ul>
+            <li>Install the <code>LLM4HW</code> package.</li>
+            <li>Download and unzip the required files (including the LLM4HW content).</li>
+            <li>Clean up by removing the downloaded zip file.</li>
+        </ul>
         
+        <h3>2. Alternative Installation Method:</h3>
+        <p>If you choose not to use the installation script (<code>install.sh</code>), you can manually perform the following steps:</p>
+        <ul>
+            <li>Install <a href="https://pypi.org/project/LLM4HW/">LLM4HW</a> the <code>LLM4HW</code> with the necessary packages and system dependencies:</li>
+            <pre><code>pip install LLM4HW</code></pre>
+            <li>Download and unzip the required files:</li>
+            <pre><code>curl -L -O https://github.com/annnnie-qiu/download/raw/c4a9d35a35a57f743e3fe1408c6b40e0ff148c6a/provide_to_students.zip
+        unzip provide_to_students.zip
+        rm provide_to_students.zip</code></pre>
+        </ul>
+        <p>Following these steps will ensure that all necessary packages and files are installed and set up correctly.</p>
         
         <h2 id="hardware-project-setup">Hardware Project Setup</h2>
         <h2 id="create-a-project-in-vivado">Create a Project in Vivado:</h2>

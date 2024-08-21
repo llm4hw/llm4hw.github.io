@@ -40,29 +40,30 @@ permalink: /plugin-tool
         <h2 id="install-and-setup-environment">Install and setup environment</h2>
 
         <p>To set up the environment for this tool, follow these steps:</p>
-        
-        <h3>1. Download and Install Required Files:</h3>
+
+        <p><strong>1. Download and Install Required Files:</strong></p>
         <p>Use the following command to download the necessary installation script:</p>
         <pre><code>curl -L -O https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh</code></pre>
         <p>After downloading, run the script to install the required packages and files:</p>
         <pre><code>sh install.sh</code></pre>
+
         <p>This will:</p>
-        <ul>
-            <li>Install the <code>LLM4HW</code> package.</li>
-            <li>Download and unzip the required files (including the LLM4HW content).</li>
-            <li>Clean up by removing the downloaded zip file.</li>
-        </ul>
-        
-        <h3>2. Alternative Installation Method:</h3>
+        <div style="padding-left: 20px;">
+            <p>Install the <code>LLM4HW</code> package.</p>
+            <p>Download and unzip the required files (including the LLM4HW content).</p>
+            <p>Clean up by removing the downloaded zip file.</p>
+        </div>
+
+        <p><strong>2. Alternative Installation Method:</strong></p>
         <p>If you choose not to use the installation script (<code>install.sh</code>), you can manually perform the following steps:</p>
-        <ul>
-            <li>Install <a href="https://pypi.org/project/LLM4HW/">LLM4HW</a> the <code>LLM4HW</code> with the necessary packages and system dependencies:</li>
+        <div style="padding-left: 20px;">
+            <p>Install <a href="https://pypi.org/project/LLM4HW/">LLM4HW</a> the <code>LLM4HW</code> with the necessary packages and system dependencies:</p>
             <pre><code>pip install LLM4HW</code></pre>
-            <li>Download and unzip the required files:</li>
+            <p>Download and unzip the required files:</p>
             <pre><code>curl -L -O https://github.com/annnnie-qiu/download/raw/c4a9d35a35a57f743e3fe1408c6b40e0ff148c6a/provide_to_students.zip
         unzip provide_to_students.zip
         rm provide_to_students.zip</code></pre>
-        </ul>
+        </div>
         <p>Following these steps will ensure that all necessary packages and files are installed and set up correctly.</p>
         
         <h2 id="hardware-project-setup">Hardware Project Setup</h2>

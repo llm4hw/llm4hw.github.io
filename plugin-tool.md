@@ -61,21 +61,21 @@ permalink: /plugin-tool
             <pre><code>pip install LLM4HW</code></pre>
             <p>- Download and unzip the required files:</p>
 
-            <style>
-                pre {
-                    font-size: 0.9em;
-                    white-space: pre-wrap;
-                    word-wrap: break-word;
-                }
-            </style>
+<style>
+    pre {
+        font-size: 0.9em;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
 
-            <pre>
-                <code>
-                    curl -L -O https://github.com/annnnie-qiu/download/raw/c4a9d35a35a57f743e3fe1408c6b40e0ff148c6a/provide_to_students.zip
-                    unzip provide_to_students.zip
-                    rm provide_to_students.zip
-                </code>
-            </pre>
+<pre>
+    <code>
+        curl -L -O https://github.com/annnnie-qiu/download/raw/c4a9d35a35a57f743e3fe1408c6b40e0ff148c6a/provide_to_students.zip
+        unzip provide_to_students.zip
+        rm provide_to_students.zip
+    </code>
+</pre>
         </div>
         <p>Following these steps will ensure that all necessary packages and files are installed and set up correctly.</p>
         

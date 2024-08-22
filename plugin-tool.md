@@ -78,6 +78,29 @@ permalink: /plugin-tool
 </pre>
         </div>
         <p>Following these steps will ensure that all necessary packages and files are installed and set up correctly.</p>
+
+        <p><strong>3. Finalize Setup and Configuration:</strong></p>
+        <p>After completing the installation steps, you will find three essential files in your project directory:</p>
+
+        <div style="padding-left: 20px;">
+            <p><strong>.env</strong>: This file is crucial for configuring your environment variables. You need to update the <code>LLM4HW_ACCOUNT</code> variable with a key provided by your professor or the academic in charge. This key is necessary to access certain features and functionalities within the LLM4HW tool.</p>
+        
+            <p><strong>script.tcl</strong>: This script is designed to be used within Vivado. While no immediate changes are necessary, specific instructions on how to adjust the script for your project’s requirements will be provided in the following sections.</p>
+        
+            <p><strong>new.py</strong>: This Python script contains the core logic for your project. No modifications are required, and it’s ready to be used as-is.</p>
+        </div>
+        
+        <p><strong>Important:</strong></p>
+        <div style="padding-left: 20px;">
+            <p><strong>Request the <code>LLM4HW_ACCOUNT</code> Key:</strong> Contact your professor or the academic in charge to obtain the necessary key for the <code>.env</code> file. Without this key, certain operations may not function correctly.</p>
+            <p><strong>Verify Configuration:</strong> Before running any scripts, double-check that all environment variables are correctly set up in the <code>.env</code> file.</p>
+        </div>
+        
+        <p>By following these steps, your environment will be fully configured and ready for development or deployment. Further instructions for using <code>script.tcl</code> in Vivado will be provided in the next sections.</p>
+
+
+
+
         
         <h2 id="hardware-project-setup">Hardware Project Setup</h2>
         <h2 id="create-a-project-in-vivado">Create a Project in Vivado:</h2>

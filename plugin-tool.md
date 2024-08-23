@@ -156,7 +156,7 @@ permalink: /plugin-tool
         
         <p>2. Find the location of the Python executable:</p>
             <div style="padding-left: 20px;">
-                <p>Use the command: <code>where python</code></p>
+                <p>Use the command: <code>where python</code> or <code>where.exe python</code></p>
             </div>
         <p>3. Open script.tcl and modify the commands according to the output of the previous steps.</p>
 

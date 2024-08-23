@@ -93,7 +93,7 @@ permalink: /plugin-tool
         <p style="color: red;"><strong>Important:</strong></p>
         <div style="padding-left: 20px;">
             <p><strong>Request the <code>LLM4HW_ACCOUNT</code> Key:</strong> <strong>Contact your professor or the academic in charge</strong> to obtain the necessary key for the <code>.env</code> file. Without this key, certain operations may not function correctly.</p>
-            <p><strong>Request the <code>LLM4HW_ACCOUNT</code> Key:</strong> <strong>Contact your professor or the academic in charge to obtain the necessary key for the <code>.env</code> file. Without this key, certain operations may not function correctly.</p>
+            <p><strong>Request the <code>LLM4HW_ACCOUNT</code> Key:</strong> <strong>Contact your professor or the academic in charge</strong> to obtain the necessary key for the <code>.env</code> file. Without this key, certain operations may not function correctly.</p>
             <p><strong>Verify Configuration:</strong> Before running any scripts, double-check that all environment variables are correctly set up in the <code>.env</code> file.</p>
         </div>
         

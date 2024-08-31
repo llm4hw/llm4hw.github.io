@@ -7,4 +7,4 @@ This website is the homepage of the joint project "LLM4HW" which explores how LL
 
 This website is under construction, and additional content will be posted soon.
 
-<img src="/picture/llm4hw.webp" alt="Figure 1" style="width: 90%;">
+<img src="/picture/lllm4hw.webp" alt="Figure 1" style="width: 90%;">

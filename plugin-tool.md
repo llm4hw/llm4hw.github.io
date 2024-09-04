@@ -39,7 +39,7 @@ permalink: /plugin-tool
         <p>This guide provides a step-by-step approach to setting up and using a custom Large Language Model (LLM) integration within Xilinx Vivado. By following these instructions, users will be able to create a new project in Vivado, add custom commands, and configure Tcl scripts to facilitate seamless interactions with LLM tools. This setup aims to enhance the hardware design process by leveraging LLM capabilities to provide instant responses and solutions directly within the Vivado environment. </p>
 
         <h2 id="cse-virtual-machine">Using CSE Virtual Machine</h2>
-        <p>For users using the CSE virtual machine, the Vivado environment is pre-configured, and the plugin tool is already set up for you. However, before you use the tool, you need to execute the following step 4 in Configure the Tcl Script to ensure everything is working correctly:</p>
+        <p>For users using the CSE virtual machine, the Vivado environment is pre-configured, and the plugin tool is already set up for you. However, before you use the tool, you need to execute the <strong>following step 4 in Configure the Tcl Script</strong> to ensure everything is working correctly</p>
         
         <p>After entering that two commands, the plugin tool is ready</p>
         

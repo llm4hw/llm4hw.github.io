@@ -41,7 +41,7 @@ permalink: /plugin-tool
         <h2 id="cse-virtual-machine">Using CSE Virtual Machine</h2>
         <p>For users using the CSE virtual machine, the Vivado environment is pre-configured, and the plugin tool is already set up for you. However, before you use the tool, you need to execute the <strong>following step 4 in Configure the Tcl Script</strong> to ensure everything is working correctly</p>
         
-        <p>After entering that two commands, the plugin tool is ready</p>
+        <p>After entering those two commands, the plugin tool is ready</p>
         
 
         <h2 id="install-and-setup-environment">Install and setup environment</h2>
@@ -50,7 +50,10 @@ permalink: /plugin-tool
 
         <p><strong>1. Download and Install Required Files:</strong></p>
         <p>Use the following command to download the necessary installation script:</p>
+        <p><strong> For using Linux: </strong></p>
         <pre><code>curl -L -O https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh</code></pre>
+        <p><strong> For using Windows: </strong></p>
+        <pre><code>Invoke-WebRequest -Uri https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh -OutFile install.sh</code></pre>
         <p>After downloading, run the script to install the required packages and files:</p>
         <pre><code>sh install.sh</code></pre>
 

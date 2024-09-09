@@ -53,9 +53,10 @@ permalink: /plugin-tool
         <p><strong> For using Linux: </strong></p>
         <pre><code>curl -L -O https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh</code></pre>
         <p><strong> For using Windows(Power Shell): </strong></p>
-        <pre><code>Invoke-WebRequest -Uri https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh -OutFile install.sh</code></pre>
+        <pre><code>Invoke-WebRequest -Uri https://raw.githubusercontent.com/annnnie-qiu/download/master/install.bat -OutFile install.bat</code></pre>
         <p>After downloading, run the script to install the required packages and files(in WSL or in Git):</p>
         <pre><code>sh install.sh</code></pre>
+
 
         <p>This will:</p>
         <div style="padding-left: 20px;">

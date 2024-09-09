@@ -54,7 +54,7 @@ permalink: /plugin-tool
         <pre><code>curl -L -O https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh</code></pre>
         <p><strong> For using Windows(Power Shell): </strong></p>
         <pre><code>Invoke-WebRequest -Uri https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh -OutFile install.sh</code></pre>
-        <p>After downloading, run the script to install the required packages and files:</p>
+        <p>After downloading, run the script to install the required packages and files(in WSL or in Git):</p>
         <pre><code>sh install.sh</code></pre>
 
         <p>This will:</p>

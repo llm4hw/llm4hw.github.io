@@ -169,6 +169,7 @@ root.destroy()
             <div style="padding-left: 20px;">
                 <p>Use the command: <code>where python</code> or <code>where.exe python</code></p>
             </div>
+            <p><strong> HITS:</strong> the output of where python is signal '/' and we need to change it to '//'.</p>
         <p>3. Open script.tcl and modify the commands according to the output of the previous steps.</p>
 
 

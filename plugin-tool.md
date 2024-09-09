@@ -52,7 +52,7 @@ permalink: /plugin-tool
         <p>Use the following command to download the necessary installation script:</p>
         <p><strong> For using Linux: </strong></p>
         <pre><code>curl -L -O https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh</code></pre>
-        <p><strong> For using Windows: </strong></p>
+        <p><strong> For using Windows(Power Shell): </strong></p>
         <pre><code>Invoke-WebRequest -Uri https://raw.githubusercontent.com/annnnie-qiu/download/master/install.sh -OutFile install.sh</code></pre>
         <p>After downloading, run the script to install the required packages and files:</p>
         <pre><code>sh install.sh</code></pre>

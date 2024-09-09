@@ -56,6 +56,7 @@ permalink: /plugin-tool
         <pre><code>Invoke-WebRequest -Uri https://raw.githubusercontent.com/annnnie-qiu/download/master/install.bat -OutFile install.bat</code></pre>
         <p>After downloading, run the script to install the required packages and files(in WSL or in Git):</p>
         <pre><code>sh install.sh</code></pre>
+        <p>For Windows user, open the batch file and install the environment.</p>
 
 
         <p>This will:</p>

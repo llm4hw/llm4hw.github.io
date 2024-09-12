@@ -82,11 +82,12 @@ Following these steps will ensure that all necessary packages and files are inst
 
 ### 3. Finalize Setup and Configuration:
 After completing the installation steps, you will find three essential files in your project directory:
-    *  **.env**: This file is crucial for configuring your environment variables. You need to update the ```LLM4HW_ACCOUNT``` variable with a key provided by your professor or the academic in charge. This key is necessary to access certain features and functionalities within the LLM4HW tool.
+
+*  **.env**: This file is crucial for configuring your environment variables. You need to update the ```LLM4HW_ACCOUNT``` variable with a key provided by your professor or the academic in charge. This key is necessary to access certain features and functionalities within the LLM4HW tool.
     
-     *  **script.tcl**: This script is designed to be used within Vivado. While no immediate changes are necessary, specific instructions on how to adjust the script for your project’s requirements will be provided in the following sections.
+*  **script.tcl**: This script is designed to be used within Vivado. While no immediate changes are necessary, specific instructions on how to adjust the script for your project’s requirements will be provided in the following sections.
      
-    *  **new.py**: This Python script contains the core logic for your project. No modifications are required, and it’s ready to be used as-is.
+*  **new.py**: This Python script contains the core logic for your project. No modifications are required, and it’s ready to be used as-is.
 
     
     

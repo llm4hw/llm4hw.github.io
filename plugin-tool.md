@@ -68,39 +68,25 @@ This will:
 If you choose not to use the installation script (`install.sh`), you can manually perform the following steps:
 
 - Install <a href="https://pypi.org/project/LLM4HW/">LLM4HW</a> the `LLM4HW` with the necessary packages and system dependencies:
+  ```
+  pip install LLM4HW
+  ```
 
+- Download and unzip the required files:
+  ```
+  curl -L -O https://github.com/annnnie-qiu/download/raw/master/provide_to_students.zip
+  unzip provide_to_students.zip
+  rm provide_to_students.zip
+  ```
+Following these steps will ensure that all necessary packages and files are installed and set up correctly.
 
-        <pre><code>pip install LLM4HW</code></pre>
-        <p>- Download and unzip the required files:</p>
+### 3. Finalize Setup and Configuration:
+After completing the installation steps, you will find three essential files in your project directory:
+    *  **.env**: This file is crucial for configuring your environment variables. You need to update the ```LLM4HW_ACCOUNT``` variable with a key provided by your professor or the academic in charge. This key is necessary to access certain features and functionalities within the LLM4HW tool.
+     *  **script.tcl**: This script is designed to be used within Vivado. While no immediate changes are necessary, specific instructions on how to adjust the script for your project’s requirements will be provided in the following sections.
+    *  **new.py**: This Python script contains the core logic for your project. No modifications are required, and it’s ready to be used as-is.
 
-<style>
-pre {
-    font-size: 0.9em;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-</style>
-
-<pre>
-<code>
-    curl -L -O https://github.com/annnnie-qiu/download/raw/master/provide_to_students.zip
-    unzip provide_to_students.zip
-    rm provide_to_students.zip
-</code>
-</pre>
-    </div>
-    <p>Following these steps will ensure that all necessary packages and files are installed and set up correctly.</p>
-
-    <p><strong>3. Finalize Setup and Configuration:</strong></p>
-    <p>After completing the installation steps, you will find three essential files in your project directory:</p>
-
-    <div style="padding-left: 20px;">
-        <p><strong>- .env</strong>: This file is crucial for configuring your environment variables. You need to update the <code>LLM4HW_ACCOUNT</code> variable with a key provided by your professor or the academic in charge. This key is necessary to access certain features and functionalities within the LLM4HW tool.</p>
     
-        <p><strong>- script.tcl</strong>: This script is designed to be used within Vivado. While no immediate changes are necessary, specific instructions on how to adjust the script for your project’s requirements will be provided in the following sections.</p>
-    
-        <p><strong>- new.py</strong>: This Python script contains the core logic for your project. No modifications are required, and it’s ready to be used as-is.</p>
-    </div>
     
     <p style="color: red;"><strong>Important:</strong></p>
     <div style="padding-left: 20px;">

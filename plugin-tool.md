@@ -100,7 +100,6 @@ By following these steps, your environment will be fully configured and ready fo
 
 
 ## Hardware Project Setup
-
 ### Create a Project in Vivado:
 Open Vivado and create a new project.
 
@@ -109,33 +108,25 @@ Open Vivado and create a new project.
   
 * Create your own Tcl button by clicking on the “+” to add a new Custom Command.
     <img src="/picture/picture1.png" alt="Figure 1" style="width: 90%;">
-
-
     
-    <p>Enter a unique command name, e.g., LLM4HW, and press Enter.</p>
+* Enter a unique command name, e.g., LLM4HW, and press Enter.
     <img src="/picture/picture2.png" alt="Figure 2" style="width: 90%;">
     
-    <p>Set up the custom command</p>
-    <div style="padding-left: 20px;">
-        <p>- <strong>Menu Name:</strong> Give a distinctive name to the button (e.g., LLM4HW).</p>
-        <p>- <strong>Description:</strong> Enter "Waiting LLM response."</p>
-        <p>- <strong>Source Tcl File:</strong> Browse and select the direction of script.tcl file you download before.</p>
-        <p>- Click on “Add to the Toolbar” and then click Apply.</p>
-        <p>- Click OK.</p>
-    </div>
+* Set up the custom command
+        - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW).
+        - **Description:** Enter "Waiting LLM response."
+        - **Source Tcl File:** Browse and select the direction of script.tcl file you download before.
+        - Click on “Add to the Toolbar” and then click Apply.
+        - Click OK.
     <img src="/picture/picture3.png" alt="Figure 3" style="width: 90%;">
 
-    <p>Now, you should see a new button on the top toolbar in Vivado.</p>
+Now, you should see a new button on the top toolbar in Vivado.
     <img src="/picture/picture4.png" alt="Figure 4">
 
-    
-    <h2 id="configure-the-tcl-script">Configure the Tcl Script:</h2>
-    <p>1. Determine the Tcl and Tk versions used by Python's Tkinter:</p>
-        <div style="padding-left: 20px;">
-            <p>- Open your command prompt and type the following:</p>
-        </div>
-<pre class="codeStyle">
-<code>
+
+## Configure the Tcl Script:
+1. Determine the Tcl and Tk versions used by Python's Tkinter:
+```
 python -c "
 import tkinter as tk
 import os
@@ -151,76 +142,73 @@ print('Tk library location:', tk_lib)
 
 root.destroy()
 "
-</code>
-</pre>
+```
     
-    <p>2. Find the location of the Python executable:</p>
-        <div style="padding-left: 20px;">
-            <p>Use the command: <code>where python</code> or <code>where.exe python</code></p>
-        </div>
-        <p style="color: red;"><strong> HITS:</strong> the output of where python is signal '\' and we need to change it to '\\'.</p>
-    <p>3. Open script.tcl and modify the commands according to the output of the previous steps.</p>
+2. Find the location of the Python executable:
+Use the command: ```where python``` or ```where.exe python```
 
+<span style="color: red;">HITS:</span>
+the output of where python is signal '\' and we need to change it to '\\'.
 
-<pre class="codeStyle">
-<code>
-    unset -nocomplain ::env(PYTHONHOME)
-    unset -nocomplain ::env(PYTHONPATH)
-    #! /usr/bin/tclsh
-    proc call_python {} {
-        set env(TCL_LIBRARY) &lt;tcl library location&gt;
-        set env(TK_LIBRARY) &lt;tk library loaction&gt;
-        set python_script_path &lt;the location path you download for new.py&gt;
-        set python_exe &lt;location of the python.exe on your system&gt;
-        set project_path [get_property DIRECTORY [current_project]]
-        set output [exec $python_exe $python_script_path $project_path]
-        puts $output
-    }
-    call_python
-</code>
-</pre>
+4. Open script.tcl and modify the commands according to the output of the previous steps.
 
-    <div style="padding-left: 20px;">
-            <p>For example, if you follow this step-by-step guide, you will expect the commands to look like the following: </p>
-    </div>
-<pre class="codeStyle"><code>
-    unset -nocomplain ::env(PYTHONHOME)
-    unset -nocomplain ::env(PYTHONPATH)
-    #! /usr/bin/tclsh
-    proc call_python {} {
-        set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
-        set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
-        set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
-        set python_exe "D:\\app\\python.exe"
-        set project_path [get_property DIRECTORY [current_project]]
-        set output [exec $python_exe $python_script_path $project_path]
-        puts $output
-    }
-    call_python
-</code></pre>
+```
+unset -nocomplain ::env(PYTHONHOME)
+unset -nocomplain ::env(PYTHONPATH)
+#! /usr/bin/tclsh
+proc call_python {} {
+    set env(TCL_LIBRARY) &lt;tcl library location&gt;
+    set env(TK_LIBRARY) &lt;tk library loaction&gt;
+    set python_script_path &lt;the location path you download for new.py&gt;
+    set python_exe &lt;location of the python.exe on your system&gt;
+    set project_path [get_property DIRECTORY [current_project]]
+    set output [exec $python_exe $python_script_path $project_path]
+    puts $output
+}
+call_python
+```
 
-    <p>4. Before you use it, type the two commands (in script.tcl file) to TCL console first</p>
-    <p><code>set env(TCL_LIBRARY) &lt;tcl library location&gt;</code></p>
-    <p><code>set env(TK_LIBRARY) &lt;tk library location&gt;</code></p>
+For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
+```
+unset -nocomplain ::env(PYTHONHOME)
+unset -nocomplain ::env(PYTHONPATH)
+#! /usr/bin/tclsh
+proc call_python {} {
+    set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
+    set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
+    set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
+    set python_exe "D:\\app\\python.exe"
+    set project_path [get_property DIRECTORY [current_project]]
+    set output [exec $python_exe $python_script_path $project_path]
+    puts $output
+}
+call_python
+```
+
+4. Before you use it, type the two commands (in script.tcl file) to TCL console first
+    ```set env(TCL_LIBRARY) &lt;tcl library location&gt;```
+    ```set env(TK_LIBRARY) &lt;tk library location&gt;```
     <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
-    <p>5. Now, the plugin tool is ready to be used in Vivado! </p>
-    
-    <h2 id="usage">Usage</h2>
-    <p><strong>Operation:</strong></p>
-<p>Press the newly added button to open a new window. A default question is preset, and you can wait for your response.</p>
+
+5. Now, the plugin tool is ready to be used in Vivado!
+
+## Usage
+**Operation:**
+Press the newly added button to open a new window. A default question is preset, and you can wait for your response.
     <img src="/picture/picture6.png" alt="Figure 6" style="width: 90%;">
     
-<p>If you have more questions, type them into the “Ask Follow Up Question” box.</p>
+If you have more questions, type them into the “Ask Follow Up Question” box.
     <img src="/picture/picture7.png" alt="Figure 7" style="width: 90%;">
     
-    <p><strong>Completion:</strong></p>
-<p>Once you have received your response and know how to proceed, press the exit button to close the tool.</p>
-<p>We appreciate your feedback on the responses!</p>
-<p><strong>Please share your thoughts so we can continue to improve.</strong></p>
+**Completion:**
+Once you have received your response and know how to proceed, press the exit button to close the tool.
+
+We appreciate your feedback on the responses!
+
+**Please share your thoughts so we can continue to improve.**
     <img src="/picture/picture8.png" alt="Figure 8" style="width: 90%;">
 
-
-    <h2 id="video-tutorial">Video Tutorial</h2>
+## Video Tutorial
     <video controls width="90%">
             <source src="video/LLM_response.mp4" type="video/mp4">
         Your browser does not support the video tag.

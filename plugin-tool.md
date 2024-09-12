@@ -91,26 +91,26 @@ After completing the installation steps, you will find three essential files in 
 
     
     
-    <p style="color: red;"><strong>Important:</strong></p>
-    <div style="padding-left: 20px;">
-        <p><strong>Request the <code>LLM4HW_ACCOUNT</code> Key:</strong> <strong>Contact your professor or the academic in charge</strong> to obtain the necessary key for the <code>.env</code> file. Without this key, certain operations may not function correctly.</p>
-        <p><strong>Verify Configuration:</strong> Before running any scripts, double-check that all environment variables are correctly set up in the <code>.env</code> file.</p>
-    </div>
-    
-    <p>By following these steps, your environment will be fully configured and ready for development or deployment. Further instructions for using <code>script.tcl</code> in Vivado will be provided in the next sections.</p>
+#### <span style="color: red;">Important:</span>
+*  **Request the ```LLM4HW_ACCOUNT``` Key**: **Contact your professor or the academic in charge** to obtain the necessary key for the ```.env``` file. Without this key, certain operations may not function correctly.
+
+*  **Verify Configuration**: Before running any scripts, double-check that all environment variables are correctly set up in the ```.env``` file.
+
+By following these steps, your environment will be fully configured and ready for development or deployment. Further instructions for using ```script.tcl``` in Vivado will be provided in the next sections.
 
 
+## Hardware Project Setup
 
+### Create a Project in Vivado:
+Open Vivado and create a new project.
 
-    
-    <h2 id="hardware-project-setup">Hardware Project Setup</h2>
-    <h2 id="create-a-project-in-vivado">Create a Project in Vivado:</h2>
-    <p>Open Vivado and create a new project.</p>
-    
-    <h2 id="add-a-custom-button">Add a Custom Button:</h2>
-    <p>- Navigate to Tools &gt; Custom Commands &gt; Customize Commands… (shown as Figure 1)</p>
-    <p>- Create your own Tcl button by clicking on the “+” to add a new Custom Command.</p>
+### Add a Custom Button:
+* Navigate to Tools &gt; Custom Commands &gt; Customize Commands… (shown as Figure 1)
+  
+* Create your own Tcl button by clicking on the “+” to add a new Custom Command.
     <img src="/picture/picture1.png" alt="Figure 1" style="width: 90%;">
+
+
     
     <p>Enter a unique command name, e.g., LLM4HW, and press Enter.</p>
     <img src="/picture/picture2.png" alt="Figure 2" style="width: 90%;">

@@ -131,64 +131,65 @@ Now, you should see a new button on the top toolbar in Vivado.
 ## Configure the Tcl Script:
 1. Determine the Tcl and Tk versions used by Python's Tkinter:
 
-```
-python -c "
-import tkinter as tk
-import os
-
-root = tk.Tk()
-tcl_lib = root.tk.eval('info library')
-tk_lib = root.tk.eval('info library')
-
-print('Tcl version:', root.tk.call('info', 'patchlevel'))
-print('Tk version:', root.tk.call('info', 'patchlevel'))
-print('Tcl library location:', tcl_lib)
-print('Tk library location:', tk_lib)
-
-root.destroy()
-"
-```
+    ```
+    python -c "
+    import tkinter as tk
+    import os
+    
+    root = tk.Tk()
+    tcl_lib = root.tk.eval('info library')
+    tk_lib = root.tk.eval('info library')
+    
+    print('Tcl version:', root.tk.call('info', 'patchlevel'))
+    print('Tk version:', root.tk.call('info', 'patchlevel'))
+    print('Tcl library location:', tcl_lib)
+    print('Tk library location:', tk_lib)
+    
+    root.destroy()
+    "
+    ```
     
 2. Find the location of the Python executable:
-Use the command: ```where python``` or ```where.exe python```
+
+    Use the command: ```where python``` or ```where.exe python```
 
 <span style="color: red;">HITS:</span>
-the output of where python is signal '\' and we need to change it to '\\'.
+the output of where python is signal "\" and we need to change it to "\\".
 
-4. Open script.tcl and modify the commands according to the output of the previous steps.
-
-```
-unset -nocomplain ::env(PYTHONHOME)
-unset -nocomplain ::env(PYTHONPATH)
-#! /usr/bin/tclsh
-proc call_python {} {
-    set env(TCL_LIBRARY) &lt;tcl library location&gt;
-    set env(TK_LIBRARY) &lt;tk library loaction&gt;
-    set python_script_path &lt;the location path you download for new.py&gt;
-    set python_exe &lt;location of the python.exe on your system&gt;
-    set project_path [get_property DIRECTORY [current_project]]
-    set output [exec $python_exe $python_script_path $project_path]
-    puts $output
-}
-call_python
-```
+3. Open script.tcl and modify the commands according to the output of the previous steps.
+    
+    ```
+    unset -nocomplain ::env(PYTHONHOME)
+    unset -nocomplain ::env(PYTHONPATH)
+    #! /usr/bin/tclsh
+    proc call_python {} {
+        set env(TCL_LIBRARY) &lt;tcl library location&gt;
+        set env(TK_LIBRARY) &lt;tk library loaction&gt;
+        set python_script_path &lt;the location path you download for new.py&gt;
+        set python_exe &lt;location of the python.exe on your system&gt;
+        set project_path [get_property DIRECTORY [current_project]]
+        set output [exec $python_exe $python_script_path $project_path]
+        puts $output
+    }
+    call_python
+    ```
 
 For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
-```
-unset -nocomplain ::env(PYTHONHOME)
-unset -nocomplain ::env(PYTHONPATH)
-#! /usr/bin/tclsh
-proc call_python {} {
-    set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
-    set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
-    set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
-    set python_exe "D:\\app\\python.exe"
-    set project_path [get_property DIRECTORY [current_project]]
-    set output [exec $python_exe $python_script_path $project_path]
-    puts $output
-}
-call_python
-```
+    ```
+    unset -nocomplain ::env(PYTHONHOME)
+    unset -nocomplain ::env(PYTHONPATH)
+    #! /usr/bin/tclsh
+    proc call_python {} {
+        set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
+        set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
+        set python_script_path "D:\\chip chat\\llm-hw-help-annie\\new.py"
+        set python_exe "D:\\app\\python.exe"
+        set project_path [get_property DIRECTORY [current_project]]
+        set output [exec $python_exe $python_script_path $project_path]
+        puts $output
+    }
+    call_python
+    ```
 
 4. Before you use it, type the two commands (in script.tcl file) to TCL console first
     ```set env(TCL_LIBRARY) &lt;tcl library location&gt;```

@@ -113,11 +113,15 @@ Open Vivado and create a new project.
     <img src="/picture/picture2.png" alt="Figure 2" style="width: 90%;">
     
 * Set up the custom command
-        - **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW).
-        - **Description:** Enter "Waiting LLM response."
-        - **Source Tcl File:** Browse and select the direction of script.tcl file you download before.
-        - Click on “Add to the Toolbar” and then click Apply.
-        - Click OK.
+    1. **Menu Name:** Give a distinctive name to the button (e.g., LLM4HW).
+
+    2. **Description:**  Enter "Waiting LLM response."
+
+    3.  **Source Tcl File:** Browse and select the direction of script.tcl file you download before.
+
+    4. Click on “Add to the Toolbar” and then click Apply.
+
+    5. Click OK.
     <img src="/picture/picture3.png" alt="Figure 3" style="width: 90%;">
 
 Now, you should see a new button on the top toolbar in Vivado.
@@ -126,6 +130,7 @@ Now, you should see a new button on the top toolbar in Vivado.
 
 ## Configure the Tcl Script:
 1. Determine the Tcl and Tk versions used by Python's Tkinter:
+
 ```
 python -c "
 import tkinter as tk

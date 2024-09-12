@@ -1,10 +1,11 @@
 ---
-layout: others
+layout: default
 title: LLM4HW papers
 permalink: /papers
 ---
 
 ## Papers from the LLM4HW team:
+
 <div class="papers-container">
     <div class="paper">
         <h3>Explaining EDA synthesis errors with LLMs</h3>

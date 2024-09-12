@@ -2,3 +2,56 @@
 ---
 
 @import "{{ site.theme }}";
+
+/* Paper box styles */
+.papers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures papers are evenly spaced */
+    padding: 20px 0; /* Adds vertical padding without affecting child width */
+    box-sizing: border-box; /* Ensures padding doesn't affect the overall width calculation */
+}
+
+.paper {
+    flex: 1 1 calc(40% - 20px); /* Ensures each box takes up half the row minus gap, without growing or shrinking */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px; /* Space between rows */
+    background-color: #fff;
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+}
+
+.paper h3 {
+    color: #333;
+}
+
+.paper p {
+    color: #666;
+}
+
+.authors {
+    font-style: italic;  /* Makes the text italic */
+    color: #666;
+    margin: 5px 0;      /* Adds a little space above and below the authors */
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.codeStyle{
+    text-align: left;
+}
+
+.year {
+    float: right;
+    font-weight: bold;
+    color: #333;
+}

@@ -4,9 +4,7 @@ title: Grants
 permalink: /grants
 ---
 
-<div class="header-text">
-    <h1>We thank and acknowledge our grant sponsors.</h1>
-</div>
+# Our grant awards:
 
 <div class="papers-container">
     <div class="paper">

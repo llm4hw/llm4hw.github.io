@@ -154,7 +154,7 @@ Now, you should see a new button on the top toolbar in Vivado.
     Use the command: ```where python``` or ```where.exe python```
 
 <span style="color: red;">HITS:</span>
-the output of where python is signal "\" and we need to change it to "\\".
+the output of where python is signal "\\" and we need to change it to "\\\".
 
 3. Open script.tcl and modify the commands according to the output of the previous steps.
     
@@ -175,6 +175,7 @@ the output of where python is signal "\" and we need to change it to "\\".
     ```
 
 For example, if you follow this step-by-step guide, you will expect the commands to look like the following:
+
     ```
     unset -nocomplain ::env(PYTHONHOME)
     unset -nocomplain ::env(PYTHONPATH)
@@ -192,6 +193,7 @@ For example, if you follow this step-by-step guide, you will expect the commands
     ```
 
 4. Before you use it, type the two commands (in script.tcl file) to TCL console first
+
     ```set env(TCL_LIBRARY) &lt;tcl library location&gt;```
     ```set env(TK_LIBRARY) &lt;tk library location&gt;```
     <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">

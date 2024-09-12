@@ -5,4 +5,4 @@ plugins:
 title: LLM4HW
 description: Large Language Models for Hardware Design
 show_downloads: false
-logo: /assets/images/llm4hw-logo.png
+logo: /picture/llm4hw.webp

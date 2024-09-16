@@ -221,8 +221,7 @@ We appreciate your feedback on the responses!
 ## Video Tutorial
 
     <video controls width="90%">
-            <source src="video/LLM_response.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        <source src="video/LLM_response.mp4" type="video/mp4">
     </video>
 
 

@@ -36,7 +36,7 @@ to the TCL console first to ensure everything is working correctly.
 
 After entering those two commands, the plugin tool is ready.
 
-HITS: All the request file are in "C:\Users\cse\AppData\Local\LLM4HW"
+**HITS:** All the request file are in "C:\Users\cse\AppData\Local\LLM4HW"
     
 ## On your own machine? Install and Setup Environment
 

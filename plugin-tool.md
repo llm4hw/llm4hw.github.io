@@ -227,8 +227,6 @@ We appreciate your feedback on the responses!
 
 ## Video Tutorial
 
-    <video controls width="90%">
-        <source src="[video/LLM_response.mp4](https://github.com/llm4hw/llm4hw.github.io/blob/main/video/LLM_response.mp4)" type="video/mp4">
-    </video>
+    [Watch the video](https://github.com/llm4hw/llm4hw.github.io/blob/main/video/LLM_response.mp4)
 
 

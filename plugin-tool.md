@@ -27,9 +27,16 @@ This guide provides a step-by-step approach to setting up and using a custom Lar
 
 ## At UNSW? Using the CSE Virtual Machine
     
-For users using the CSE virtual machine, the Vivado environment is pre-configured, and the plugin tool is already set up for you. However, before you use the tool, you need to follow step 4 (Configure the Tcl Script) to ensure everything is working correctly.
+For users using the CSE virtual machine, the Vivado environment is pre-configured, and the plugin tool is already set up for you. However, before you use the tool, you need to type
+```
+set env(TCL_LIBRARY) "C:\\Program Files\\Python312\\tcl\\tcl8.6"
+set env(TK_LIBRARY) "C:\\Program Files\\Python312\\tcl\\tcl8.6"
+```
+to the TCL console first to ensure everything is working correctly.
 
 After entering those two commands, the plugin tool is ready.
+
+HITS: All the request file are in "C:\Users\cse\AppData\Local\LLM4HW"
     
 ## On your own machine? Install and Setup Environment
 

@@ -161,7 +161,7 @@ Now, you should see a new button on the top toolbar in Vivado.
     Use the command: ```where python``` or ```where.exe python```
 
     <span style="color: red;">HITS:</span>
-    the output of where python is signal "\\" and we need to change it to "\\"\".
+    the output of where python is signal "\\" and we need to change it to "\\\".
 
 3. Open script.tcl and modify the commands according to the output of the previous steps.
     

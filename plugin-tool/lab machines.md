@@ -26,6 +26,7 @@ set env(TK_LIBRARY) "C:\\Program Files\\Python312\\tcl\\tcl8.6"
 to the TCL console first to ensure everything is working correctly.
 
 After entering those two commands, the plugin tool is ready.
+<img src="/picture/picture4.png" alt="Figure 4">
 
 
 ## Usage

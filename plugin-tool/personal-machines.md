@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /plugin-tool/
+permalink: /plugin-tool/personal-machines/
 ---
 
 # LLM Tools on Vivado Setup Guide

@@ -185,15 +185,16 @@ For example, if you follow this step-by-step guide, you will expect the commands
     call_python
     ```
 
-4. Before you use it, type the two commands (in script.tcl file) to TCL console first
-
-    ```set env(TCL_LIBRARY) &lt;tcl library location&gt;```
-
-    ```set env(TK_LIBRARY) &lt;tk library location&gt;```
+4. Before you use it, type the two commands (in the script.tcl file) to the TCL console first
+   as an example, I will do
+    ```
+    set env(TCL_LIBRARY) "D:\\app\\tcl\\tcl8.6"
+    set env(TK_LIBRARY) "D:\\app\\tcl\\tk8.6"
+    ```
 
     <img src="/picture/picture5.png" alt="Figure 5" style="width: 90%;">
 
-5. Now, the plugin tool is ready to be used in Vivado!
+6. Now, the plugin tool is ready to be used in Vivado!
 
 
 
